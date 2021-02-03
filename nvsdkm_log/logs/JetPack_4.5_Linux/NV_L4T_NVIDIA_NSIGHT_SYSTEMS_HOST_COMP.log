@@ -1,0 +1,51 @@
+Info: [host] [ Disk Avail:120.36 GB ]
+Info: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP include 1 package
+Info: [ Package Install Started ]
+Info: deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb Version | tr -d '\n'
+Info: exec_command: sudo -E apt-get install -y --allow-downgrades '/home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb'
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-72 linux-headers-4.15.0-72-generic
+  linux-image-4.15.0-72-generic linux-modules-4.15.0-72-generic
+  linux-modules-extra-4.15.0-72-generic
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  nsight-systems-2020.5.3
+0 upgraded, 1 newly installed, 0 to remove and 241 not upgraded.
+Need to get 0 B/194 MB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 /home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb nsight-systems-2020.5.3 amd64 2020.5.3.17-0256620 [194 MB]
+Selecting previously unselected package nsight-systems-2020.5.3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 287344 files and directories currently installed.)
+Preparing to unpack .../NsightSystems-linux-public-2020.5.3.17-0256620.deb ...
+Unpacking nsight-systems-2020.5.3 (2020.5.3.17-0256620) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20160824-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Setting up nsight-systems-2020.5.3 (2020.5.3.17-0256620) ...
+update-alternatives: error: alternative path is not absolute as it should be: 
+update-alternatives: error: alternative path is not absolute as it should be: 
+update-alternatives: using /opt/nvidia/nsight-systems/2020.5.3/host-linux-x64/nsys-ui to provide /usr/local/bin/nsys-ui (nsys-ui) in auto mode
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: [ Package Install Finished Successfully ]
+Info: [host] [ 517.07 MB used. Disk Avail: 119.85 GB ]
+Info: [ NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP Install took 52s ]
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+Info: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3

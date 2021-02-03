@@ -1,0 +1,217 @@
+﻿{
+    "information": {
+        "title": "Clara Linux Versions Releases",
+        "fileVersion": "1",
+        "fileRevision": 0,
+        "serverConfigurationBuild": "25C"
+    },
+    "releases": [
+        {
+            "productCategory": "Clara",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "Clara AGX 2.1",
+            "releaseVersion": "2.1",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "showInMainList": true,
+            "releaseMessage": "",
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "887788"
+            ],
+            "targetHW": [
+                "CLARA_AGX_DEVKIT"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://developer.nvidia.com/clara-agx-sdk-release-notes",
+                "releaseNotesTooltip": "<p><span class=\"\\&quot;tooltip-title\\&quot;\">What's new in Clara 2.1:</span></p><ul><li>Adds dGPU RTX6000 support for NVIDIA Clara AGX™ Developer Kit</li></ul>",
+                "releaseNotesDownload": true
+            },
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_CLARA_ADDITIONAL_SDK_SUPRA",
+                    "version": "1.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Clara_Linux_2.1_0"
+                }
+            ],
+            "schemaVersion": "3.0",
+            "compRepoURL": "https://developer.nvidia.com/assets/Clara/Downloads/Secure/Clara-2.1/CLARA_21_b8/sdkml3_clara_l4t_21.json"
+        },
+        {
+            "productCategory": "Clara",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "Clara AGX 2.0",
+            "releaseVersion": "2.0",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "showInMainList": true,
+            "releaseMessage": "",
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "887788"
+            ],
+            "targetHW": [
+                "CLARA_AGX_DEVKIT",
+                "JETSON_AGX_XAVIER"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://developer.nvidia.com/clara-agx-sdk-release-notes-20",
+                "releaseNotesTooltip": "Open Release Notes",
+                "releaseNotesDownload": true
+            },
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_CLARA_ADDITIONAL_SDK_SUPRA",
+                    "version": "1.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Clara_Linux_2.0_0"
+                }
+            ],
+            "schemaVersion": "3.0",
+            "compRepoURL": "https://developer.nvidia.com/assets/Clara/Downloads/Secure/Clara-2.0/CLARA_20_b38/sdkml3_clara_l4t_20.json"
+        },
+        {
+            "productCategory": "Clara",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "Clara AGX 1.5",
+            "releaseVersion": "1.5",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "showInMainList": false,
+            "releaseMessage": "",
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "887788"
+            ],
+            "targetHW": [
+                "JETSON_AGX_XAVIER",
+                "JETSON_NANO_DEVKIT",
+                "JETSON_NANO"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://developer.nvidia.com/clara-agx-sdk-release-notes",
+                "releaseNotesTooltip": "Open Release Notes",
+                "releaseNotesDownload": true
+            },
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_CLARA_ADDITIONAL_SDK_SUPRA",
+                    "version": "1.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Clara_Linux_1.5_0"
+                }
+            ],
+            "schemaVersion": "3.0",
+            "compRepoURL": "https://developer.nvidia.com/Clara/Downloads/Secure/Clara_1.5/CLARA_15_b23/sdkml3_clara_l4t_15.json"
+        }
+    ],
+    "additionalSDKs": {
+        "NV_CLARA_ADDITIONAL_SDK_SUPRA": {
+            "id": "NV_CLARA_ADDITIONAL_SDK_SUPRA",
+            "title": "SUPRA",
+            "description": "SUPRA is an open-source pipeline for fully software defined ultrasound processing for real-time applications. Covering everything from beamforming to output of B-Mode images, SUPRA can help reproducibility of results and allows modifications to the image acquisition.",
+            "versions": [
+                {
+                    "version": "1.0",
+                    "revision": 0,
+                    "baseReleaseId": "Clara_Linux_2.1_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": [
+                        "887788"
+                    ],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "host",
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/Clara/Downloads/Secure/Clara-2.1/CLARA_21_b8_SUPRA/sdkml3_clara_l4t_21_supra.json",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "1.0",
+                    "revision": 0,
+                    "baseReleaseId": "Clara_Linux_2.0_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": [
+                        "887788"
+                    ],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "host",
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/Clara/Downloads/Secure/Clara-2.0/CLARA_20_b38_SUPRA/sdkml3_clara_l4t_20_supra.json",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "1.0",
+                    "revision": 0,
+                    "baseReleaseId": "Clara_Linux_1.5_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": [
+                        "887788"
+                    ],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "host",
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/Clara/Downloads/Secure/Clara_1.5/CLARA_15_b23_SUPRA/sdkml3_clara_l4t_15_supra.json",
+                    "intHWCompURL": ""
+                }
+            ]
+        }
+    }
+}

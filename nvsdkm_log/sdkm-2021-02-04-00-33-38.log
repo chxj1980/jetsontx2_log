@@ -1,0 +1,1341 @@
+00:33:38.702 - info: SDK Manager started running at: 2021-02-04 00:33:38.699
+00:33:38.715 - info: SDK Manager log file name: sdkm-2021-02-04-00-33-38.log
+00:33:38.718 - info: SDK Manager client version: 1.4.0
+00:33:38.718 - info: SDK Manager is running in GUI mode
+00:33:41.708 - info: Current DB Version:  14
+00:33:44.545 - warn: Registering a callback with no name for event: System settings table changed after getting machineInfo
+00:33:45.527 - info: User agent for http requests: SDKM/1.4.0.7363 (Ubuntu 1604)
+00:33:45.733 - warn: Registering a callback with no name for event: Session started
+00:33:45.931 - warn: Registering a callback with no name for event: Session started
+00:33:45.932 - warn: Registering a callback with no name for event: Report component install/uninstall error messages
+00:33:45.932 - warn: Registering a callback with no name for event: Report component install/uninstall error code/type
+00:33:45.934 - info: downloadMetrics.reset
+00:33:45.935 - warn: Registering a callback with no name for event: Session started
+00:33:45.935 - warn: Registering a callback with no name for event: Session resumed
+00:33:45.936 - warn: Registering a callback with no name for event: Session started
+00:33:45.937 - warn: Registering a callback with no name for event: Session ended
+00:33:45.937 - warn: Registering a callback with no name for event: File init download status
+00:33:45.937 - warn: Registering a callback with no name for event: File pending download
+00:33:45.937 - warn: Registering a callback with no name for event: File started downloading
+00:33:45.937 - warn: Registering a callback with no name for event: File finished downloading
+00:33:45.938 - warn: Registering a callback with no name for event: File checksum verifying
+00:33:45.938 - warn: Registering a callback with no name for event: Component init status
+00:33:45.938 - warn: Registering a callback with no name for event: Component started action
+00:33:45.938 - warn: Registering a callback with no name for event: Component finished pausing download
+00:33:45.938 - warn: Registering a callback with no name for event: Component finished resuming download
+00:33:45.938 - warn: Registering a callback with no name for event: Component finished action
+00:33:45.939 - warn: Registering a callback with no name for event: Session started
+00:33:45.939 - warn: Registering a callback with no name for event: Component finished action
+00:33:45.978 - warn: Registering a callback with no name for event: Active bundle loaded
+00:33:45.979 - warn: Registering a callback with no name for event: Component finished action
+00:33:45.980 - info: Forking worker process
+00:33:45.995 - info: Initializing the download service
+00:33:46.016 - info: Download service pid is: 11180
+00:33:46.030 - warn: Registering a callback with no name for event: File download in progress
+00:33:46.030 - warn: Registering a callback with no name for event: File finished downloading
+00:33:46.037 - warn: Registering a callback with no name for event: Session started
+00:33:46.037 - warn: Registering a callback with no name for event: File download in progress
+00:33:46.037 - warn: Registering a callback with no name for event: File finished downloading
+00:33:46.037 - warn: Registering a callback with no name for event: File reset downloaded size
+00:33:46.037 - warn: Registering a callback with no name for event: File download size updated
+00:33:46.037 - warn: Registering a callback with no name for event: Component init status
+00:33:46.037 - warn: Registering a callback with no name for event: Component started action
+00:33:46.038 - warn: Registering a callback with no name for event: Component progress for action
+00:33:46.038 - warn: Registering a callback with no name for event: Component finished action
+00:33:46.039 - info: Download manager can use up to 6 download threads per file
+00:33:46.039 - warn: Registering a callback with no name for event: Session started
+00:33:46.199 - info: create .sdkm.bashrc under /home/latelee/.nvsdkm/.sdkm.bashrc
+00:33:46.247 - info: installMetrics.reset
+00:33:46.248 - warn: Registering a callback with no name for event: Session started
+00:33:46.249 - info: uninstallMetrics.reset
+00:33:46.250 - warn: Registering a callback with no name for event: Active bundle loaded
+00:33:46.256 - warn: Registering a callback with no name for event: Active bundle loaded
+00:33:46.256 - warn: Registering a callback with no name for event: Component finished action
+00:33:46.257 - warn: Registering a callback with no name for event: File finished downloading
+00:33:46.257 - warn: Registering a callback with no name for event: Component finished downloading
+00:33:46.257 - warn: Registering a callback with no name for event: Session started
+00:33:46.257 - warn: Registering a callback with no name for event: Session resumed
+00:33:46.257 - warn: Registering a callback with no name for event: Session paused
+00:33:46.257 - warn: Registering a callback with no name for event: Session complete when pausing
+00:33:46.749 - warn: Registering a callback with no name for event: File started downloading
+00:33:46.749 - warn: Registering a callback with no name for event: File download in progress
+00:33:46.749 - warn: Registering a callback with no name for event: File checksum verifying
+00:33:46.749 - warn: Registering a callback with no name for event: File finished downloading
+00:33:49.534 - warn: Registering a callback with no name for event: Active bundle loaded
+00:33:49.562 - warn: Registering a callback with no name for event: Terminal output
+00:33:49.562 - warn: Registering a callback with no name for event: Login Progress
+00:33:49.562 - warn: Registering a callback with no name for event: undefined
+00:33:49.562 - warn: Registering a callback with no name for event: Component download in progress
+00:33:49.562 - warn: Registering a callback with no name for event: Component progress for action
+00:33:49.562 - warn: Registering a callback with no name for event: Component started action
+00:33:49.562 - warn: Registering a callback with no name for event: File started downloading
+00:33:49.562 - warn: Registering a callback with no name for event: Component init status
+00:33:49.562 - warn: Registering a callback with no name for event: Component finished pausing download
+00:33:49.562 - warn: Registering a callback with no name for event: Component finished resuming download
+00:33:49.562 - warn: Registering a callback with no name for event: Component finished downloading
+00:33:49.562 - warn: Registering a callback with no name for event: Group finished downloading
+00:33:49.562 - warn: Registering a callback with no name for event: Component finished action
+00:33:49.562 - warn: Registering a callback with no name for event: Session paused
+00:33:49.563 - warn: Registering a callback with no name for event: Session resumed
+00:33:49.577 - info: Logger level is set to: info
+00:33:50.314 - warn: Registering a callback with no name for event: Login Progress
+00:33:50.314 - warn: Registering a callback with no name for event: CLI Abort
+00:33:50.399 - info: Front-end main function (startMain) was called
+00:33:50.651 - info: Creating auto update task
+00:33:50.941 - info: Host OS: Ubuntu1604
+00:33:50.954 - info: packageJson: /opt/nvidia/sdkmanager/resources/app/package.json
+00:33:51.020 - info: [Download Service]:Download service is initializing
+Download service was initialized
+Got heartbeat request
+
+00:33:51.021 - info: [Download Service] Download service is alive
+00:33:51.210 - info: Application configuration is: 
+{
+  mainRepoURL: 'https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json',
+  PIDServer: 'P',
+  DevZoneServer: 'P',
+  StarfleetServer: 'P'
+}
+00:33:51.320 - info: trying to autologin with already signed in user
+00:33:51.326 - info: token has not yet expired, validating with starfleet
+00:33:51.327 - info: Logging in...
+00:33:51.330 - info: Event: Login Progress: Authenticating with NVIDIA server...
+00:33:51.336 - info: manifest: {"name":"sdkmanager","releaseVersion":"1.4.0","releaseRevision":"0","releaseBuild":"7363","release":false,"chrome":"78.0.3904.113"}
+00:33:51.336 - info: Telemetry parameters are: title: SDK Manager 1.4.0.7363 version: 1.4.0 dev: 0 internal: false 
+00:33:51.349 - info: Telemetry: allow = Allow. isGDPRAllowed=true
+00:33:51.349 - info: Initializing Telemetry visitor. Application: SDK Manager 1.4.0.7363. Version: 1.4.0.7363. clientMode: UI. isDevelopmentEnvironment: 0. NV User: false
+00:33:51.351 - info: Initialized Telemetry for SDK Manager. TrackID: UA-59254929-54. UserID: 5953ece6-e542-5455-8c9c-c045e2cf7492.
+00:33:51.352 - info: Telemetry: setting custom dimensions: UserType, SDKMode, SDKMVersion External UI 1.4.0.7363
+00:33:51.352 - info: Setting custom dimension: UserType - cd5, External
+00:33:51.352 - info: Setting custom dimension: SDKMode - cd6, UI
+00:33:51.352 - info: Setting custom dimension: SDKMVersion - cd8, 1.4.0.7363
+00:33:51.466 - info: mainRepoUrl: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+00:33:51.472 - info: logging in with l1 url: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+00:33:51.811 - info: Create timing task for auto update successfully.
+00:33:57.023 - info: User programs URL is: https://developer.nvidia.com/api/assets/v1/current_user_sdk/programs
+00:34:01.186 - info: the DevZone programs that user can access:
+00:34:01.186 - info: { id: 874688, name: NVIDIA Developer Program }
+00:34:01.187 - info: { id: 878431, name: Technology Access Group }
+00:34:01.203 - info: Retrieving Data...
+00:34:01.204 - info: Processing Data...
+00:34:01.222 - info: Checking for GDPR allow. gdprAllow: Allow. client version: 1.4.0.7363. Last seen client: 1.4.0.7363
+00:34:01.227 - info: LastSeenSDKMClientVersion is set to 1.4.0.7363
+00:34:01.235 - info: mainRepoUrl: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+00:34:01.239 - info: Loading data from server: l1url. Url: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+00:34:01.241 - info: Logging into Telemetry server: starfleet
+00:34:01.241 - info: Setting custom dimension: LoginServer - cd10, Starfleet
+00:34:05.067 - info: sdkml1_repo.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:05.129 - info: Initial product lines number before validation:  5
+00:34:05.715 - info: sdkml2_clara_linux.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/Clara/Linux/sdkml2_clara_linux.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:05.856 - info: validating product line for target OS: Linux
+00:34:05.858 - info: 
+00:34:05.858 - info: 	validating release: Clara AGX 2.1
+00:34:05.859 - warn: 		No access to devzone program id 887788
+00:34:05.860 - warn: 	No access to release Clara AGX 2.1. 
+00:34:05.860 - info: 
+00:34:05.860 - info: 	validating release: Clara AGX 2.0
+00:34:05.861 - warn: 		No access to devzone program id 887788
+00:34:05.861 - warn: 	No access to release Clara AGX 2.0. 
+00:34:05.861 - info: 
+00:34:05.861 - info: 	validating release: Clara AGX 1.5
+00:34:05.861 - warn: 		No access to devzone program id 887788
+00:34:05.862 - warn: 	No access to release Clara AGX 1.5. 
+00:34:05.866 - info: sdkml2_jetson_linux.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/Jetson/Linux/sdkml2_jetson_linux.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:06.072 - info: validating product line for target OS: Linux
+00:34:06.073 - info: 
+00:34:06.073 - info: 	validating release: JetPack 4.5
+00:34:06.073 - info: 		Can access to devzone program id 874688
+00:34:06.074 - info: 
+00:34:06.074 - info: 	validating release: JetPack 4.4.1
+00:34:06.074 - info: 		Can access to devzone program id 874688
+00:34:06.074 - info: 
+00:34:06.074 - info: 	validating release: JetPack 4.4
+00:34:06.075 - info: 		Can access to devzone program id 874688
+00:34:06.075 - info: 
+00:34:06.075 - info: 	validating release: JetPack 4.3
+00:34:06.075 - info: 		Can access to devzone program id 874688
+00:34:06.075 - info: 
+00:34:06.075 - info: 	validating release: JetPack 3.3.3
+00:34:06.076 - info: 		Can access to devzone program id 874688
+00:34:06.076 - info: 
+00:34:06.076 - info: 	validating release: JetPack 4.2.3
+00:34:06.076 - info: 		Can access to devzone program id 874688
+00:34:06.077 - info: Event: Login Progress: Loading and processing available products...
+00:34:06.082 - info: 
+00:34:06.082 - info: 	validating release: DeepStream
+00:34:06.082 - info: 		Can access to devzone program id 874688
+00:34:06.082 - info: 
+00:34:06.082 - info: 	validating release: DeepStream
+00:34:06.082 - info: 		Can access to devzone program id 874688
+00:34:06.082 - info: 
+00:34:06.082 - info: 	validating release: DeepStream
+00:34:06.083 - info: 		Can access to devzone program id 874688
+00:34:06.083 - info: 
+00:34:06.083 - info: 	validating release: DeepStream
+00:34:06.083 - info: 		Can access to devzone program id 874688
+00:34:06.083 - info: 
+00:34:06.083 - info: 	validating release: DeepStream
+00:34:06.083 - info: 		Can access to devzone program id 874688
+00:34:07.810 - info: sdkml2_drive_linux.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/DRIVE/Linux/sdkml2_drive_linux.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:08.138 - info: validating product line for target OS: Linux
+00:34:08.139 - info: 
+00:34:08.139 - info: 	validating release: DRIVE Software 10.0
+00:34:08.139 - warn: 		No access to devzone program id 879192
+00:34:08.139 - warn: 	No access to release DRIVE Software 10.0. 
+00:34:08.140 - info: 
+00:34:08.140 - info: 	validating release: DRIVE Software 9.0
+00:34:08.140 - warn: 		No access to devzone program id 879192
+00:34:08.140 - warn: 	No access to release DRIVE Software 9.0. 
+00:34:08.140 - info: 
+00:34:08.140 - info: 	validating release: DRIVE Software 8.0
+00:34:08.140 - warn: 		No access to devzone program id 879192
+00:34:08.140 - warn: 	No access to release DRIVE Software 8.0. 
+00:34:08.140 - info: 
+00:34:08.141 - info: 	validating release: DRIVE Software 8.0
+00:34:08.141 - warn: 		No access to devzone program id -1
+00:34:08.141 - warn: 	No access to release DRIVE Software 8.0. 
+00:34:08.141 - info: 
+00:34:08.141 - info: 	validating release: DRIVE OS 5.2.3 SDK
+00:34:08.141 - warn: 		No access to devzone program id -1
+00:34:08.141 - warn: 	No access to release DRIVE OS 5.2.3 SDK. 
+00:34:08.141 - info: 
+00:34:08.141 - info: 	validating release: DRIVE OS 5.2.0 SDK
+00:34:08.141 - warn: 		No access to devzone program id 879192
+00:34:08.142 - warn: 	No access to release DRIVE OS 5.2.0 SDK. 
+00:34:08.142 - info: 
+00:34:08.142 - info: 	validating release: DRIVE OS 5.2.0 SDK
+00:34:08.142 - warn: 		No access to devzone program id -1
+00:34:08.142 - warn: 	No access to release DRIVE OS 5.2.0 SDK. 
+00:34:08.144 - info: 
+00:34:08.144 - info: 	validating release: DRIVE OS 5.1.15 with DriveWorks
+00:34:08.144 - warn: 		No access to devzone program id -1
+00:34:08.145 - warn: 	No access to release DRIVE OS 5.1.15 with DriveWorks. 
+00:34:08.145 - info: 
+00:34:08.145 - info: 	validating release: DRIVE OS 5.1.15.0 SDK
+00:34:08.145 - warn: 		No access to devzone program id -1
+00:34:08.145 - warn: 	No access to release DRIVE OS 5.1.15.0 SDK. 
+00:34:08.146 - info: 
+00:34:08.146 - info: 	validating release: DRIVE OS 5.0.10.3 SDK with DriveWorks
+00:34:08.146 - warn: 		No access to devzone program id 876061
+00:34:08.146 - warn: 	No access to release DRIVE OS 5.0.10.3 SDK with DriveWorks. 
+00:34:08.146 - info: 
+00:34:08.146 - info: 	validating release: DRIVE OS 5.0.10.3 PDK
+00:34:08.147 - warn: 		No access to devzone program id -1
+00:34:08.147 - warn: 	No access to release DRIVE OS 5.0.10.3 PDK. 
+00:34:09.939 - info: sdkml2_sdkmanager_linux_deb.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/SDKMANAGER/Linux/sdkml2_sdkmanager_linux_deb.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:10.009 - info: validating product line for target OS: 
+00:34:10.009 - info: 
+00:34:10.009 - info: 	validating release: SDK Manager
+00:34:10.009 - info: 		Empty devzone program id, need to validate l3 url
+00:34:10.010 - info: 			Validate l3 url successfully
+00:34:10.010 - info: Event: Login Progress: Loading and processing available products...
+00:34:15.888 - info: sdkml2_drive_qnx.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/DRIVE/QNX/sdkml2_drive_qnx.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:16.072 - info: validating product line for target OS: QNX
+00:34:16.073 - info: 
+00:34:16.073 - info: 	validating release: DRIVE OS 5.2.3 SDK
+00:34:16.073 - warn: 		No access to devzone program id -1
+00:34:16.074 - warn: 	No access to release DRIVE OS 5.2.3 SDK. 
+00:34:16.074 - info: 
+00:34:16.074 - info: 	validating release: DRIVE OS 5.2.0 SDK
+00:34:16.074 - warn: 		No access to devzone program id -1
+00:34:16.074 - warn: 	No access to release DRIVE OS 5.2.0 SDK. 
+00:34:16.075 - info: 
+00:34:16.075 - info: 	validating release: DRIVE OS 5.1.15.0 SDK
+00:34:16.075 - warn: 		No access to devzone program id -1
+00:34:16.076 - warn: 	No access to release DRIVE OS 5.1.15.0 SDK. 
+00:34:16.480 - info: Selecting Jetson product
+00:34:16.484 - info: step1 load in ms: 15244.784999998956
+00:34:16.486 - info: Web server configuration build version 1003D584J23C is set
+00:34:16.577 - info: cleaning the group map
+00:34:16.578 - info: BundleData constructMap
+00:34:16.821 - info: stdout: Querying the install status of 'CUDA on Host' (NV_CUDA_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+
+00:34:16.822 - info: stdout: Querying the install status of 'CUDA Cross Compile Package on Host' (NV_CUDA_CROSS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+
+00:34:16.822 - info: stdout: Querying the install status of 'VisionWorks on Host' (NV_VISIONWORKS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+
+00:34:16.822 - info: stdout: Querying the install status of 'VPI on Host' (NV_VPI_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+
+00:34:16.823 - info: stdout: Querying the install status of 'VPI Cross Compile Package on Host' (NV_VPI_CROSS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+
+00:34:16.823 - info: stdout: Querying the install status of 'NVIDIA Nsight Graphics' (NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+
+00:34:16.823 - info: stdout: Querying the install status of 'NVIDIA Nsight Systems' (NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+
+00:34:17.469 - info: stdout: Host Deb package [{cuda-toolkit-10-2 10.2.89}] not installed; [deb_name]: cuda-repo-ubuntu1604-10-2-local-10.2.89-440.40_1.0-1_amd64.deb
+
+00:34:17.471 - info: stdout: Host Deb package [{vpi1-cross-aarch64-l4t 1.0.12}] not installed; [deb_name]: vpi-cross-aarch64-l4t-1.0.12-cuda10-x86_64-linux.deb
+
+00:34:17.473 - info: Component: NV_CUDA_HOST_COMP version: 10.2 for bundle: JetPack_4.5_Linux is not installed
+00:34:17.474 - info: Component: NV_VPI_CROSS_HOST_COMP version: 1.0 for bundle: JetPack_4.5_Linux is not installed
+00:34:17.476 - info: stdout: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+
+00:34:17.501 - info: stdout: Host Deb package [{cuda-cross-aarch64-10-2 10.2.89}] not installed; [deb_name]: cuda-repo-cross-aarch64-10-2-local-10.2.89_1.0-1_all.deb
+
+00:34:17.502 - info: Component: NV_CUDA_CROSS_HOST_COMP version: 10.2 for bundle: JetPack_4.5_Linux is not installed
+00:34:17.505 - info: stdout: Host Deb package [{libnvvpi1 1.0.12}] not installed; [deb_name]: vpi-lib-1.0.12-cuda10-x86_64-linux.deb
+
+00:34:17.506 - info: Component: NV_VPI_HOST_COMP version: 1.0 for bundle: JetPack_4.5_Linux is not installed
+00:34:17.537 - info: stdout: Host Deb package  NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP NVIDIA_Nsight_Graphics_L4T_Public_2020.5.20329.deb installed successfully.
+
+00:34:17.539 - info: Component: NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP version: 2020.5 for bundle: JetPack_4.5_Linux is installed
+00:34:17.558 - info: stdout: Host Deb package  NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP NsightSystems-linux-public-2020.5.3.17-0256620.deb installed successfully.
+
+00:34:17.559 - info: Component: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP version: 2020.5 for bundle: JetPack_4.5_Linux is installed
+00:34:17.602 - info: stdout: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+
+00:34:17.652 - info: stdout: Host Deb package [{libvisionworks 1.6.0.501} {libvisionworks-dev 1.6.0.501} {libvisionworks-samples 1.6.0.501}] not installed; [deb_name]: libvisionworks-repo_1.6.0.501_amd64.deb
+
+00:34:17.654 - info: Component: NV_VISIONWORKS_HOST_COMP version: 1.6 for bundle: JetPack_4.5_Linux is not installed
+00:34:17.689 - info: cleaning the group map
+00:34:17.690 - info: BundleData constructMap
+00:34:17.772 - warn: comp NV_L4T_DRIVERS_T194_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:34:17.773 - warn: comp NV_L4T_DRIVERS_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:34:17.773 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T194_COMP 32.5]
+00:34:17.774 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T210_COMP 32.5]
+00:34:17.775 - warn: comp NV_L4T_FLASH_XAVIER_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:34:17.775 - warn: comp NV_L4T_FLASH_XAVIER_8GB_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:34:17.776 - warn: comp NV_L4T_FLASH_XAVIER_NX_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:34:17.776 - warn: comp NV_L4T_FLASH_XAVIER_NX_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:34:17.780 - warn: comp NV_L4T_FLASH_TX2_4GB_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2_4GB], not include JETSON_TX2
+00:34:17.780 - warn: comp NV_L4T_FLASH_TX2I_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2I], not include JETSON_TX2
+00:34:17.780 - warn: comp NV_L4T_FLASH_TX1_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:34:17.780 - warn: comp NV_L4T_FLASH_NANO_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:34:17.780 - warn: comp NV_L4T_FLASH_NANO_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:34:17.781 - warn: comp NV_L4T_FLASH_NANO_2GB_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:34:17.783 - warn: comp NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:34:17.787 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP 7.1]
+00:34:17.788 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:34:17.844 - warn: no hostOperatingSystemsSupportFor in json
+00:34:17.845 - info: Checking for update with mainRepoURL: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+00:34:23.287 - info: sdkml1_repo.json from https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:34:42.863 - error: sdkml2_sdkmanager_linux_deb.json download failed with error ECONNRESET, request url: https://developer.download.nvidia.com/sdkmanager/sdkm-config/SDKMANAGER/Linux/sdkml2_sdkmanager_linux_deb.json
+00:34:42.864 - warn: cannot get SDK Manager update information with updater failed to download https://developer.download.nvidia.com/sdkmanager/sdkm-config/SDKMANAGER/Linux/sdkml2_sdkmanager_linux_deb.json with error: Error: socket hang up
+00:34:42.864 - info: packageJson: /opt/nvidia/sdkmanager/resources/app/package.json
+00:34:42.875 - info: [updater] no SDK Manager client update available.
+00:35:06.642 - info: initializeGroups. User selections: Product: Jetson	Version: 4.5	selectedHW: target	selectedTargetCategoryId: JETSON_TX2	selectedOS: Linux
+00:35:06.831 - info: Setting custom dimension: ProductVersion - cd1, 4.5
+00:35:06.831 - info: Setting custom dimension: ProductHW - cd2, host_target.JETSON_TX2
+00:35:06.831 - info: Setting custom dimension: ProductOS - cd3, Linux
+00:35:06.831 - info: Setting custom dimension: ProductName - cd7, Jetson
+00:35:06.831 - info: Setting custom dimension: BundleName - cd9, JetPack 4.5
+00:35:06.836 - info: loading l3 data from repo url:  
+[
+  'https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/sdkml3_jetpack_l4t_45.json',
+  'https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/sdkml3_jetpack_l4t_45_deepstream.json'
+]
+00:35:06.845 - info: EulaFolder:  /opt/nvidia/sdkmanager/Eula/
+00:35:16.119 - info: sdkml3_jetpack_l4t_45.json from https://developer.download.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/sdkml3_jetpack_l4t_45.json?D3LgDhjLXW1NCu9R8LGtPU4mbPMT73QUftpXx467X5jp7xrBaoCfp8bJVIEUm3o6JHSotXKjP5ECsoQaGq7WF_o-Sm0aZc3SepOS7CjCwi4j9LKlGTfx6dCCs0s4tOvNOwfV4qgtMHAq8OqYn7grE7FalMeVcDUZnzON04Xf28e18AYlr2dvP73k_uRM2wG9vr7MB6PtsAj-eYGuhPqDZadVJN_J has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:35:23.735 - info: sdkml3_jetpack_l4t_45_deepstream.json from https://developer.download.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/sdkml3_jetpack_l4t_45_deepstream.json?dbz5h05KPNv7gSuAYSa5Z2_5YrOQ2IGBnB9ha9LQQcqdosQCZ0Be70cuNKa5num68XOtHJjrBpfWp5b30lMzq9In63r-xAywouX56XTLxOoJlP9hTcTFs0WKcMOxmdDpH4_i4RnaAHupPaQTFJxLWjuYK5tpBf95FvdYMmuMzZzx5xNreSK_vR2HmLq_meb2gXWmnpi8tHsgpqtvPx7vd4d7nDIPYUZ5OCeu5mKrwKh-QWXc9ZHBZXHlpQ has been downloaded to /home/latelee/.nvsdkm/dist successfully.
+00:35:23.923 - info: cleaning the group map
+00:35:23.924 - info: BundleData constructMap
+00:35:24.012 - warn: comp NV_L4T_DRIVERS_T194_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:35:24.013 - warn: comp NV_L4T_DRIVERS_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:35:24.014 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T194_COMP 32.5]
+00:35:24.014 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T210_COMP 32.5]
+00:35:24.015 - warn: comp NV_L4T_FLASH_XAVIER_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:35:24.015 - warn: comp NV_L4T_FLASH_XAVIER_8GB_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:35:24.015 - warn: comp NV_L4T_FLASH_XAVIER_NX_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:35:24.015 - warn: comp NV_L4T_FLASH_XAVIER_NX_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:35:24.016 - warn: comp NV_L4T_FLASH_TX2_4GB_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2_4GB], not include JETSON_TX2
+00:35:24.016 - warn: comp NV_L4T_FLASH_TX2I_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2I], not include JETSON_TX2
+00:35:24.016 - warn: comp NV_L4T_FLASH_TX1_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:35:24.016 - warn: comp NV_L4T_FLASH_NANO_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:35:24.017 - warn: comp NV_L4T_FLASH_NANO_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:35:24.017 - warn: comp NV_L4T_FLASH_NANO_2GB_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:35:24.019 - warn: comp NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:35:24.027 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP 7.1]
+00:35:24.028 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:35:24.030 - info: Event: Active bundle loaded: Jetson - 4.5 - JETSON_TX2
+00:35:24.032 - info: InstallProxy is initializing
+00:35:24.033 - warn: installProxy initialization: did not get expected details from engine. Expected {product title, target os, and edition}. Got {title: JetPack 4.5, OS: Linux, edition: }
+00:35:24.034 - info: looking for install adapter from /opt/nvidia/sdkmanager/resources/app/output/installUtils
+00:35:24.036 - info: Install proxy initialized successfully
+00:35:24.156 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - init status is: installed
+00:35:24.157 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - init status is: installed
+00:35:24.157 - info: Event: NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2 - init status is: pending_install
+00:35:24.157 - info: Event: NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2 - init status is: pending_install
+00:35:24.157 - info: Event: NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2 - init status is: pending_install
+00:35:24.157 - info: Event: NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2 - init status is: pending_install
+00:35:24.158 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.158 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.158 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.158 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.158 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.159 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.159 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.159 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.159 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.159 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:35:24.171 - info: Setting AdditionalSDKSelection with value:  DeepStream
+00:35:24.171 - info: Setting custom dimension: AdditionalSDKSelection - cd13, DeepStream
+00:35:24.172 - info: Session initial status: install percent: 80. (16 out of 2)
+00:35:24.197 - info: initializeGroups ended successfully. Duration:  00:00:17
+00:37:34.067 - info: Destorying eula view. eula warning timer is null: true
+00:37:37.198 - info: initializeGroups. User selections: Product: Jetson	Version: 4.5	selectedHW: target	selectedTargetCategoryId: JETSON_TX2	selectedOS: Linux
+00:37:37.345 - info: Setting custom dimension: ProductVersion - cd1, 4.5
+00:37:37.345 - info: Setting custom dimension: ProductHW - cd2, host_target.JETSON_TX2
+00:37:37.345 - info: Setting custom dimension: ProductOS - cd3, Linux
+00:37:37.345 - info: Setting custom dimension: ProductName - cd7, Jetson
+00:37:37.346 - info: Setting custom dimension: BundleName - cd9, JetPack 4.5
+00:37:37.348 - info: loading l3 data from repo url:  
+[
+  'https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/sdkml3_jetpack_l4t_45.json',
+  'https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/sdkml3_jetpack_l4t_45_deepstream.json'
+]
+00:37:37.348 - info: EulaFolder:  /opt/nvidia/sdkmanager/Eula/
+00:37:37.402 - info: cleaning the group map
+00:37:37.402 - info: BundleData constructMap
+00:37:37.492 - warn: comp NV_L4T_DRIVERS_T194_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:37:37.492 - warn: comp NV_L4T_DRIVERS_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:37:37.493 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T194_COMP 32.5]
+00:37:37.493 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T210_COMP 32.5]
+00:37:37.494 - warn: comp NV_L4T_FLASH_XAVIER_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:37:37.494 - warn: comp NV_L4T_FLASH_XAVIER_8GB_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:37:37.494 - warn: comp NV_L4T_FLASH_XAVIER_NX_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:37:37.499 - warn: comp NV_L4T_FLASH_XAVIER_NX_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:37:37.501 - warn: comp NV_L4T_FLASH_TX2_4GB_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2_4GB], not include JETSON_TX2
+00:37:37.501 - warn: comp NV_L4T_FLASH_TX2I_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2I], not include JETSON_TX2
+00:37:37.501 - warn: comp NV_L4T_FLASH_TX1_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:37:37.501 - warn: comp NV_L4T_FLASH_NANO_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:37:37.502 - warn: comp NV_L4T_FLASH_NANO_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:37:37.502 - warn: comp NV_L4T_FLASH_NANO_2GB_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:37:37.503 - warn: comp NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:37:37.506 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP 7.1]
+00:37:37.507 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:37:37.507 - info: Event: Active bundle loaded: Jetson - 4.5 - JETSON_TX2
+00:37:37.508 - info: InstallProxy is initializing
+00:37:37.508 - warn: installProxy initialization: did not get expected details from engine. Expected {product title, target os, and edition}. Got {title: JetPack 4.5, OS: Linux, edition: }
+00:37:37.508 - info: looking for install adapter from /opt/nvidia/sdkmanager/resources/app/output/installUtils
+00:37:37.509 - info: Install proxy initialized successfully
+00:37:37.614 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - init status is: installed
+00:37:37.615 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - init status is: installed
+00:37:37.615 - info: Event: NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2 - init status is: pending_install
+00:37:37.615 - info: Event: NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2 - init status is: pending_install
+00:37:37.616 - info: Event: NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2 - init status is: pending_install
+00:37:37.616 - info: Event: NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2 - init status is: pending_install
+00:37:37.616 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.617 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.617 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.617 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.617 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.618 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.618 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.618 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.619 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.619 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:37.625 - info: Setting AdditionalSDKSelection with value:  DeepStream
+00:37:37.625 - info: Setting custom dimension: AdditionalSDKSelection - cd13, DeepStream
+00:37:37.625 - info: Session initial status: install percent: 80. (16 out of 2)
+00:37:37.648 - info: initializeGroups ended successfully. Duration:  0.448s
+00:37:46.501 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.502 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.503 - info: Event: NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2 - init status is: skipped
+00:37:46.503 - info: Event: NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2 - init status is: skipped
+00:37:46.504 - info: Event: NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2 - init status is: skipped
+00:37:46.504 - info: Event: NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2 - init status is: skipped
+00:37:46.504 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.505 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.505 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.505 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.505 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.505 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.506 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.506 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.507 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:46.507 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - init status is: pending_download
+00:37:48.362 - info: 
+
+********************** Running download for bundle JetPack_4.5_Linux_for_Jetson_TX2 time: 04-Feb-2021-00.37:48 **********************
+00:37:48.393 - info: 0B disk space is required for download
+00:37:48.403 - info: Event: Session started: JetPack 4.5 Linux for Jetson TX2 - download
+00:37:48.404 - info: downloadMetrics.reset
+00:37:48.405 - info: Dependency detected: "NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2" -> "NV_L4T_DRIVERS_T186_COMP@JETSON_TX2" ("File System and OS" -> "Drivers for Jetson")
+00:37:48.405 - info: Group dependency detected: "NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2" -> "NV_JETPACK_L4T_IMAGE_SETUP_TARGET_GROUP@JETSON_TX2" ("Device Mode Host Setup in Flash" -> "Jetson OS image")
+00:37:48.406 - info: Dependency detected: "NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2" -> "NV_L4T_DRIVERS_T186_COMP@JETSON_TX2" ("Device Mode Host Setup in Flash" -> "Drivers for Jetson") of group "NV_JETPACK_L4T_IMAGE_SETUP_TARGET_GROUP@JETSON_TX2" ("Jetson OS image")
+00:37:48.406 - info: Dependency detected: "NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2" -> "NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2" ("Device Mode Host Setup in Flash" -> "File System and OS") of group "NV_JETPACK_L4T_IMAGE_SETUP_TARGET_GROUP@JETSON_TX2" ("Jetson OS image")
+00:37:48.406 - info: Dependency detected: "NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2" -> "NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2" ("Flash Jetson TX2" -> "File System and OS")
+00:37:48.407 - info: Dependency detected: "NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2" -> "NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2" ("Flash Jetson TX2" -> "Device Mode Host Setup in Flash")
+00:37:48.407 - info: Group dependency detected: "NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2" -> "NV_JETPACK_L4T_FLASH_TARGET_GROUP@JETSON_TX2" ("Device Mode Host Setup in Target SDK" -> "Flash Jetson OS")
+00:37:48.407 - info: Dependency detected: "NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2" -> "NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2" ("Device Mode Host Setup in Target SDK" -> "Device Mode Host Setup in Flash") of group "NV_JETPACK_L4T_FLASH_TARGET_GROUP@JETSON_TX2" ("Flash Jetson OS")
+00:37:48.407 - info: Dependency detected: "NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2" -> "NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2" ("Device Mode Host Setup in Target SDK" -> "Flash Jetson TX2") of group "NV_JETPACK_L4T_FLASH_TARGET_GROUP@JETSON_TX2" ("Flash Jetson OS")
+00:37:48.408 - info: Dependency detected: "NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2" -> "NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2" ("DateTime Target Setup" -> "Device Mode Host Setup in Target SDK")
+00:37:48.408 - info: Dependency detected: "NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2" ("CUDA Toolkit for L4T" -> "DateTime Target Setup")
+00:37:48.408 - info: Dependency detected: "NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2" ("cuDNN on Target" -> "DateTime Target Setup")
+00:37:48.409 - info: Dependency detected: "NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("TensorRT on Target" -> "CUDA Toolkit for L4T")
+00:37:48.409 - info: Dependency detected: "NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("TensorRT on Target" -> "cuDNN on Target")
+00:37:48.409 - info: Dependency detected: "NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2" ("OpenCV on Target" -> "DateTime Target Setup")
+00:37:48.409 - info: Dependency detected: "NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("VisionWorks on Target" -> "CUDA Toolkit for L4T")
+00:37:48.410 - info: Dependency detected: "NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("VPI on Target" -> "CUDA Toolkit for L4T")
+00:37:48.410 - info: Dependency detected: "NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("VPI on Target" -> "OpenCV on Target")
+00:37:48.410 - info: Dependency detected: "NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("NVIDIA Container Runtime with Docker integration (Beta)" -> "TensorRT on Target")
+00:37:48.410 - info: Dependency detected: "NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("NVIDIA Container Runtime with Docker integration (Beta)" -> "VisionWorks on Target")
+00:37:48.411 - info: Dependency detected: "NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2" -> "NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("Multimedia API" -> "TensorRT on Target")
+00:37:48.411 - info: Dependency detected: "NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2" ("NVIDIA Nsight Systems" -> "DateTime Target Setup")
+00:37:48.411 - info: Dependency detected: "NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("DeepStream" -> "TensorRT on Target")
+00:37:48.411 - info: Dependency detected: "NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2" -> "NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2" ("DeepStream" -> "VisionWorks on Target")
+00:37:48.416 - info: OS: host - seqential install order: NV_L4T_DRIVERS_T186_COMP, NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP
+00:37:48.416 - info: OS: host - concurrent install order: NV_DEVICE_MODE_SETUP_IMAGE_COMP, NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP
+00:37:48.416 - info: OS: target - seqential install order: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP, NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP, NV_L4T_VPI_TARGET_POST_INSTALL_COMP, NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP, NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP, NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP, NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP, NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP, NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP, NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP
+00:37:48.416 - info: OS: target - concurrent install order: NV_DEVICE_MODE_SETUP_TARGET_COMP, NV_DATETIME_SETUP_TARGET_COMP
+00:37:48.530 - info: Destorying eula view. eula warning timer is null: true
+00:37:48.536 - info: Drivers for Jetson up-to-date
+00:37:48.540 - info: File System and OS up-to-date
+00:37:48.542 - info: Download manager can use up to 6 download threads per file
+00:37:48.546 - info: Event: {"type":"System settings table changed after getting machineInfo"}
+00:37:48.550 - info: number of download processes set to 3
+00:37:48.550 - info: Download manager can download up to 3 files concurrently
+00:37:48.551 - info: Event: NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2 - download ended
+00:37:48.557 - info: Event: NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2 - download ended
+00:37:48.559 - info: Event: NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2 - download ended
+00:37:48.560 - info: Event: NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2 - download ended
+00:37:48.581 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Jetson_Linux_R32.5.0_aarch64.tbz2 retry chain number 1
+00:37:48.582 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 retry chain number 1
+00:37:48.582 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb retry chain number 1
+00:37:48.586 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - Jetson_Linux_R32.5.0_aarch64.tbz2 - started downloading
+00:37:48.588 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 - started downloading
+00:37:48.590 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb - started downloading
+00:37:48.713 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - Jetson_Linux_R32.5.0_aarch64.tbz2 - checksum verifying
+00:37:48.713 - info: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/Jetson_Linux_R32.5.0_aarch64.tbz2
+00:37:48.725 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/Jetson_Linux_R32.5.0_aarch64.tbz2
+00:37:48.725 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/Jetson_Linux_R32.5.0_aarch64.tbz2
+00:37:48.731 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 - checksum verifying
+00:37:48.731 - info: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2
+00:37:48.750 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2
+00:37:48.751 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2
+00:37:48.758 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb - checksum verifying
+00:37:48.758 - info: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+00:37:48.768 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+00:37:48.768 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+00:38:06.562 - info: 601edaeee8ad86485c520a56ec889473  /home/latelee/Downloads/nvidia/my_download/Jetson_Linux_R32.5.0_aarch64.tbz2
+
+00:38:06.564 - info: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/Jetson_Linux_R32.5.0_aarch64.tbz2 with correct checksum, skip downloading.
+00:38:06.566 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - Jetson_Linux_R32.5.0_aarch64.tbz2 - finished downloading
+00:38:06.567 - info: Event: NV_L4T_DRIVERS_T186_COMP@JETSON_TX2 - finished downloading
+00:38:06.580 - info: download duration for component NV_L4T_DRIVERS_T186_COMP@JETSON_TX2: 0.000s
+00:38:06.654 - info: Event: {"type":"File init download status","groupId":"NV_JETPACK_L4T_IMAGE_SETUP_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DRIVERS_T186_COMP@JETSON_TX2","fileName":"Jetson_Linux_R32.5.0_aarch64.tbz2","isCached":true,"fileSize":350179282,"cachedSize":350179282}
+00:38:06.655 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Jetson_Linux_R32.5.0_aarch64.tbz2 was completed successfully for component: NV_L4T_DRIVERS_T186_COMP#32.5
+00:38:06.657 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb retry chain number 1
+00:38:06.659 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb - started downloading
+00:38:06.733 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb - checksum verifying
+00:38:06.733 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+00:38:06.745 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+00:38:06.745 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+00:38:07.602 - info: e19ba074d111c0af9f0bf7f4fcdfbfa7  /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+00:38:07.604 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb with correct checksum, skip downloading.
+00:38:07.606 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb - finished downloading
+00:38:07.626 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb","isCached":true,"fileSize":9920774,"cachedSize":9920774}
+00:38:07.627 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb was completed successfully for component: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP#4.1.1
+00:38:07.628 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb retry chain number 1
+00:38:07.630 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb - started downloading
+00:38:07.650 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb - checksum verifying
+00:38:07.654 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+00:38:07.683 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+00:38:07.683 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+00:38:07.992 - info: ad5a4d2513ec0ed2f743afb948adb9b0  /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+00:38:07.993 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb with correct checksum, skip downloading.
+00:38:07.994 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb - finished downloading
+00:38:08.016 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb","isCached":true,"fileSize":1022926,"cachedSize":1022926}
+00:38:08.017 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb was completed successfully for component: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP#4.1.1
+00:38:08.020 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb retry chain number 1
+00:38:08.024 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb - started downloading
+00:38:08.048 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb - checksum verifying
+00:38:08.049 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+00:38:08.117 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+00:38:08.118 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+00:38:08.340 - info: 9db88f13e55751329d16d6d6ec0ae4ac  /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+00:38:08.340 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb with correct checksum, skip downloading.
+00:38:08.342 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb - finished downloading
+00:38:08.365 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb","isCached":true,"fileSize":14240,"cachedSize":14240}
+00:38:08.365 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb was completed successfully for component: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP#4.1.1
+00:38:08.366 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb retry chain number 1
+00:38:08.372 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb - started downloading
+00:38:08.382 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb - checksum verifying
+00:38:08.389 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+00:38:08.413 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+00:38:08.414 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+00:38:08.705 - info: d622b7d729b62ecee44c9e7d289918cb  /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+00:38:08.705 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb with correct checksum, skip downloading.
+00:38:08.706 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb - finished downloading
+00:38:08.721 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb","isCached":true,"fileSize":2350538,"cachedSize":2350538}
+00:38:08.721 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb was completed successfully for component: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP#4.1.1
+00:38:08.722 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb retry chain number 1
+00:38:08.724 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb - started downloading
+00:38:08.740 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb - checksum verifying
+00:38:08.740 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+00:38:08.766 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+00:38:08.767 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+00:38:09.061 - info: 5969fc1376ac31cbadfd42276e271ffd  /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+00:38:09.061 - info: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb with correct checksum, skip downloading.
+00:38:09.062 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb - finished downloading
+00:38:09.062 - info: Event: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:09.064 - info: download duration for component NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:09.146 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb","isCached":true,"fileSize":192038,"cachedSize":192038}
+00:38:09.147 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb was completed successfully for component: NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP#4.1.1
+00:38:09.148 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb retry chain number 1
+00:38:09.153 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-lib-1.0.12-cuda10-aarch64-l4t.deb - started downloading
+00:38:09.236 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-lib-1.0.12-cuda10-aarch64-l4t.deb - checksum verifying
+00:38:09.237 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+00:38:09.260 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+00:38:09.261 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+00:38:09.869 - info: 13fbcb3b460d44982ba15620403300f2  /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+
+00:38:09.869 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb with correct checksum, skip downloading.
+00:38:09.870 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-lib-1.0.12-cuda10-aarch64-l4t.deb - finished downloading
+00:38:09.885 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"vpi-lib-1.0.12-cuda10-aarch64-l4t.deb","isCached":true,"fileSize":10682988,"cachedSize":10682988}
+00:38:09.886 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb was completed successfully for component: NV_L4T_VPI_TARGET_POST_INSTALL_COMP#1.0
+00:38:09.887 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb retry chain number 1
+00:38:09.888 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-dev-1.0.12-cuda10-aarch64-l4t.deb - started downloading
+00:38:09.897 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-dev-1.0.12-cuda10-aarch64-l4t.deb - checksum verifying
+00:38:09.898 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+00:38:09.908 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+00:38:09.908 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+00:38:10.054 - info: e3baeb73d2d71dd002da5b405c7f52a8  /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+
+00:38:10.054 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb with correct checksum, skip downloading.
+00:38:10.055 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-dev-1.0.12-cuda10-aarch64-l4t.deb - finished downloading
+00:38:10.071 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"vpi-dev-1.0.12-cuda10-aarch64-l4t.deb","isCached":true,"fileSize":49770,"cachedSize":49770}
+00:38:10.073 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb was completed successfully for component: NV_L4T_VPI_TARGET_POST_INSTALL_COMP#1.0
+00:38:10.074 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb retry chain number 1
+00:38:10.075 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-samples-1.0.12-cuda10-aarch64-l4t.deb - started downloading
+00:38:10.079 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-samples-1.0.12-cuda10-aarch64-l4t.deb - checksum verifying
+00:38:10.079 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+00:38:10.093 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+00:38:10.093 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+00:38:10.830 - info: 6d5725f96e13a5f1eea085c4b2733fe3  /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+
+00:38:10.831 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb with correct checksum, skip downloading.
+00:38:10.833 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-samples-1.0.12-cuda10-aarch64-l4t.deb - finished downloading
+00:38:10.857 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"vpi-samples-1.0.12-cuda10-aarch64-l4t.deb","isCached":true,"fileSize":14058628,"cachedSize":14058628}
+00:38:10.858 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb was completed successfully for component: NV_L4T_VPI_TARGET_POST_INSTALL_COMP#1.0
+00:38:10.858 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb retry chain number 1
+00:38:10.860 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-demos-1.0.12-cuda10-aarch64-l4t.deb - started downloading
+00:38:10.869 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-demos-1.0.12-cuda10-aarch64-l4t.deb - checksum verifying
+00:38:10.870 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+00:38:10.897 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+00:38:10.898 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+00:38:11.093 - info: d60f5fc9d20b5612fbc38d6a0feb851c  /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+
+00:38:11.093 - info: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb with correct checksum, skip downloading.
+00:38:11.094 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - vpi-demos-1.0.12-cuda10-aarch64-l4t.deb - finished downloading
+00:38:11.094 - info: Event: NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:11.095 - info: download duration for component NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:11.162 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"vpi-demos-1.0.12-cuda10-aarch64-l4t.deb","isCached":true,"fileSize":675910,"cachedSize":675910}
+00:38:11.163 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb was completed successfully for component: NV_L4T_VPI_TARGET_POST_INSTALL_COMP#1.0
+00:38:11.164 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb retry chain number 1
+00:38:11.171 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb - started downloading
+00:38:11.252 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb - checksum verifying
+00:38:11.259 - info: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:11.299 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:11.301 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:21.840 - info: 774350dc066a328a7f47d222385ef3a9  /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+
+00:38:21.841 - info: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:21.842 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb - finished downloading
+00:38:21.931 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb","isCached":true,"fileSize":210247698,"cachedSize":210247698}
+00:38:21.931 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP#8.0
+00:38:21.943 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb retry chain number 1
+00:38:21.944 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb - started downloading
+00:38:21.981 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb - checksum verifying
+00:38:21.982 - info: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:22.050 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:22.050 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:31.700 - info: d6f6b1b3ad06965caca5ca792c43aa43  /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+
+00:38:31.702 - info: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb with correct checksum, skip downloading.
+00:38:31.703 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb - finished downloading
+00:38:31.703 - info: Event: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:31.709 - info: download duration for component NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:31.712 - info: Event: NV_CUDA_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:31.834 - info: Event: {"type":"File init download status","groupId":"NV_CUDA_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb","isCached":true,"fileSize":1059882430,"cachedSize":1059882430}
+00:38:31.836 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb was completed successfully for component: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP#10.2
+00:38:31.839 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb retry chain number 1
+00:38:31.841 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb - started downloading
+00:38:31.902 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb - checksum verifying
+00:38:31.903 - info: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:31.963 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:31.963 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:32.564 - info: 68efa7782a6b0f927424b00ba848704b  /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+
+00:38:32.564 - info: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:32.565 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb - finished downloading
+00:38:32.623 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb","isCached":true,"fileSize":4925108,"cachedSize":4925108}
+00:38:32.624 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP#8.0
+00:38:32.626 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:32.638 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer7_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:32.679 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer7_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:32.681 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+00:38:32.721 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+00:38:32.721 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+00:38:36.327 - info: 291e2efb3286eafd24540dbcb17ebff6  /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+
+00:38:36.327 - info: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:36.328 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb - finished downloading
+00:38:36.329 - info: Event: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:36.332 - info: download duration for component NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:36.416 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb","isCached":true,"fileSize":355162290,"cachedSize":355162290}
+00:38:36.417 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP#8.0
+00:38:36.417 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:36.423 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:36.519 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:36.520 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:36.550 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:36.550 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:36.715 - info: 16d5044de093c92cd62870cde41ee274  /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:36.717 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:36.725 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer7_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:36.748 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer7_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":60344712,"cachedSize":60344712}
+00:38:36.748 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:36.749 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:36.759 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:36.802 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:36.802 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+00:38:36.833 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+00:38:36.834 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.097 - info: 2d50f67adaf9373152dfab03780d0bd9  /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:37.100 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:37.102 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:37.121 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":2332788,"cachedSize":2332788}
+00:38:37.122 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:37.125 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:37.127 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:37.145 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:37.146 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.177 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.178 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.415 - info: beac3f11e89bce444a1d0c543cec42f6  /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:37.416 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:37.417 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:37.433 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":2460152,"cachedSize":2460152}
+00:38:37.433 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:37.436 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:37.440 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:37.468 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:37.468 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.516 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.517 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.838 - info: 96ed682a5239a01f41353233a68f821e  /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:37.840 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:37.841 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:37.852 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":556950,"cachedSize":556950}
+00:38:37.853 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:37.855 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:37.856 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:37.904 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:37.904 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.973 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:37.974 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.244 - info: dd0a5e4ffeb65b849488c04c0af0656b  /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:38.245 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:38.246 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:38.297 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":334334,"cachedSize":334334}
+00:38:38.298 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:38.299 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:38.302 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvparsers7_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:38.322 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvparsers7_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:38.323 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.340 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.341 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.551 - info: 5043ff934c824076d7bf60634724152f  /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:38.552 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:38.553 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvparsers7_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:38.584 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvparsers7_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":713470,"cachedSize":713470}
+00:38:38.585 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:38.585 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:38.587 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:38.606 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:38.607 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.636 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.637 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.795 - info: ff375c1299f3d2d1a9ba0db842b303e0  /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:38.796 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:38.798 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:38.832 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":546466,"cachedSize":546466}
+00:38:38.836 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:38.837 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:38.839 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:38.852 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:38.853 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.872 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+00:38:38.872 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+00:38:39.098 - info: 39ec40f76b5b0853d5d9557278c794e2  /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:39.099 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:39.099 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:39.152 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":93050,"cachedSize":93050}
+00:38:39.152 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:39.153 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb retry chain number 1
+00:38:39.156 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-doc_7.1.3-1+cuda10.2_all.deb - started downloading
+00:38:39.210 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-doc_7.1.3-1+cuda10.2_all.deb - checksum verifying
+00:38:39.211 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+00:38:39.225 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+00:38:39.225 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+00:38:39.404 - info: 124267402594826b392db1879531d662  /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+
+00:38:39.405 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb with correct checksum, skip downloading.
+00:38:39.406 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-doc_7.1.3-1+cuda10.2_all.deb - finished downloading
+00:38:39.421 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer-doc_7.1.3-1+cuda10.2_all.deb","isCached":true,"fileSize":4702962,"cachedSize":4702962}
+00:38:39.425 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:39.427 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb retry chain number 1
+00:38:39.440 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-samples_7.1.3-1+cuda10.2_all.deb - started downloading
+00:38:39.463 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-samples_7.1.3-1+cuda10.2_all.deb - checksum verifying
+00:38:39.463 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+00:38:39.484 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+00:38:39.485 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+00:38:39.529 - info: 35ef39373e230f1560bb6124797e56f2  /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:39.531 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:39.532 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:39.550 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":61801004,"cachedSize":61801004}
+00:38:39.600 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:39.606 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb retry chain number 1
+00:38:39.608 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - tensorrt_7.1.3.0-1+cuda10.2_arm64.deb - started downloading
+00:38:39.964 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - tensorrt_7.1.3.0-1+cuda10.2_arm64.deb - checksum verifying
+00:38:39.964 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:38:39.976 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:38:39.976 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:38:40.243 - info: 60306792476a88e4074804081a96a672  /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+
+00:38:40.244 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:40.244 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - tensorrt_7.1.3.0-1+cuda10.2_arm64.deb - finished downloading
+00:38:40.254 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"tensorrt_7.1.3.0-1+cuda10.2_arm64.deb","isCached":true,"fileSize":3620,"cachedSize":3620}
+00:38:40.254 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:40.255 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:40.256 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:40.594 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:40.595 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:38:40.611 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:38:40.611 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:38:40.808 - info: ab39a2c4b80525b7ea4db314a9b5ce85  /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:40.808 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:40.809 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:40.823 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":350494,"cachedSize":350494}
+00:38:40.825 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:40.826 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:40.828 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:40.839 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:40.840 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:40.867 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:40.868 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:41.094 - info: e2c81e3cdc3ab389b4bf98d17244e2c2  /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:41.094 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:41.095 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:41.123 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":3596,"cachedSize":3596}
+00:38:41.125 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:41.126 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:41.130 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:41.301 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:41.302 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:38:41.310 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:38:41.310 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:38:41.524 - info: 4f0a7266f2c78e632c9ef20b435e9220  /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:41.525 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:41.526 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:41.543 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":347150,"cachedSize":347150}
+00:38:41.543 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:41.544 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:41.545 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:41.565 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:41.565 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:41.591 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:41.591 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.015 - info: 8ae848190df3edddc094a45517cd8440  /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:42.017 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:42.019 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:42.046 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":3612,"cachedSize":3612}
+00:38:42.047 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:42.047 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:42.055 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:42.215 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:42.216 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.237 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.238 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.609 - info: 26be059097bb1bfa32475223103d81d8  /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:42.610 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:42.611 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:42.638 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":14730,"cachedSize":14730}
+00:38:42.642 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:42.644 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb retry chain number 1
+00:38:42.646 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb - started downloading
+00:38:42.653 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb - checksum verifying
+00:38:42.654 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.666 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.666 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+00:38:42.929 - info: 8f1b2968ff7228d829e987615bb4f9aa  /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+
+00:38:42.930 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:42.930 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb - finished downloading
+00:38:42.971 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb","isCached":true,"fileSize":27370,"cachedSize":27370}
+00:38:42.971 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:38:42.972 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-repo_1.6.0.501_arm64.deb retry chain number 1
+00:38:42.973 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-repo_1.6.0.501_arm64.deb - started downloading
+00:38:43.027 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-repo_1.6.0.501_arm64.deb - checksum verifying
+00:38:43.027 - info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb
+00:38:43.037 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb
+00:38:43.037 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb
+00:38:46.687 - info: 6232660acb8305fc6e52125067fc0008  /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb
+
+00:38:46.687 - info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb with correct checksum, skip downloading.
+00:38:46.688 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-repo_1.6.0.501_arm64.deb - finished downloading
+00:38:46.704 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libvisionworks-repo_1.6.0.501_arm64.deb","isCached":true,"fileSize":60866742,"cachedSize":60866742}
+00:38:46.704 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-repo_1.6.0.501_arm64.deb was completed successfully for component: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP#1.6
+00:38:46.711 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-sfm-repo_0.90.4.501_arm64.deb retry chain number 1
+00:38:46.712 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-sfm-repo_0.90.4.501_arm64.deb - started downloading
+00:38:46.722 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-sfm-repo_0.90.4.501_arm64.deb - checksum verifying
+00:38:46.723 - info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+00:38:46.732 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+00:38:46.733 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+00:38:48.045 - info: 4c0b65a88ce83049d8811bae4fafddbe  /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+
+00:38:48.046 - info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb with correct checksum, skip downloading.
+00:38:48.046 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-sfm-repo_0.90.4.501_arm64.deb - finished downloading
+00:38:48.061 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libvisionworks-sfm-repo_0.90.4.501_arm64.deb","isCached":true,"fileSize":20201988,"cachedSize":20201988}
+00:38:48.061 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-sfm-repo_0.90.4.501_arm64.deb was completed successfully for component: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP#1.6
+00:38:48.062 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-tracking-repo_0.88.2.501_arm64.deb retry chain number 1
+00:38:48.063 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-tracking-repo_0.88.2.501_arm64.deb - started downloading
+00:38:48.067 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-tracking-repo_0.88.2.501_arm64.deb - checksum verifying
+00:38:48.067 - info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+00:38:48.080 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+00:38:48.080 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+00:38:48.831 - info: 6c25179690472476d6b8ac94578a6289  /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+
+00:38:48.831 - info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb with correct checksum, skip downloading.
+00:38:48.832 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libvisionworks-tracking-repo_0.88.2.501_arm64.deb - finished downloading
+00:38:48.833 - info: Event: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:48.835 - info: download duration for component NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:48.837 - info: Event: NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:48.900 - info: Event: {"type":"File init download status","groupId":"NV_COMPUTERVISION_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libvisionworks-tracking-repo_0.88.2.501_arm64.deb","isCached":true,"fileSize":13108638,"cachedSize":13108638}
+00:38:48.901 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-tracking-repo_0.88.2.501_arm64.deb was completed successfully for component: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP#1.6
+00:38:48.902 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cuda_10.2.89-1_arm64.deb retry chain number 1
+00:38:48.914 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-cuda_10.2.89-1_arm64.deb - started downloading
+00:38:49.363 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-cuda_10.2.89-1_arm64.deb - checksum verifying
+00:38:49.364 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+00:38:49.401 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+00:38:49.401 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+00:38:49.634 - info: eb3cb607f89f319a1125ca09ca2b8141  /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+
+00:38:49.634 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb with correct checksum, skip downloading.
+00:38:49.635 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-cuda_10.2.89-1_arm64.deb - finished downloading
+00:38:49.666 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-container-csv-cuda_10.2.89-1_arm64.deb","isCached":true,"fileSize":14964,"cachedSize":14964}
+00:38:49.667 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cuda_10.2.89-1_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:49.668 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb retry chain number 1
+00:38:49.676 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb - started downloading
+00:38:49.861 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb - checksum verifying
+00:38:49.862 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:49.883 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:49.883 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+00:38:50.140 - info: 9b76a8f2c4d53fa7cad48bc7cb4f2257  /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+
+00:38:50.140 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:50.142 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb - finished downloading
+00:38:50.155 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb","isCached":true,"fileSize":10224,"cachedSize":10224}
+00:38:50.156 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:50.157 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb retry chain number 1
+00:38:50.158 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb - started downloading
+00:38:50.161 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb - checksum verifying
+00:38:50.161 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:38:50.170 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:38:50.170 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:38:50.469 - info: be45a916e63dbe5be853db2c5c57cf62  /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+
+00:38:50.470 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb with correct checksum, skip downloading.
+00:38:50.471 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb - finished downloading
+00:38:50.507 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb","isCached":true,"fileSize":13806,"cachedSize":13806}
+00:38:50.507 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:50.509 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb retry chain number 1
+00:38:50.510 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-visionworks_1.6.0.501_arm64.deb - started downloading
+00:38:50.527 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-visionworks_1.6.0.501_arm64.deb - checksum verifying
+00:38:50.527 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+00:38:50.545 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+00:38:50.545 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+00:38:50.741 - info: afa252ef5d96ab58e6c3672c6b5f90ed  /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+
+00:38:50.749 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb with correct checksum, skip downloading.
+00:38:50.757 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-csv-visionworks_1.6.0.501_arm64.deb - finished downloading
+00:38:50.778 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-container-csv-visionworks_1.6.0.501_arm64.deb","isCached":true,"fileSize":31112,"cachedSize":31112}
+00:38:50.778 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:50.778 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libnvidia-container0_0.9.0_beta.1_arm64.deb retry chain number 1
+00:38:50.780 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvidia-container0_0.9.0_beta.1_arm64.deb - started downloading
+00:38:50.804 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvidia-container0_0.9.0_beta.1_arm64.deb - checksum verifying
+00:38:50.808 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb
+00:38:50.836 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb
+00:38:50.843 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb
+00:38:51.095 - info: c343f119238659c724732da212163e83  /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb
+
+00:38:51.106 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb with correct checksum, skip downloading.
+00:38:51.109 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvidia-container0_0.9.0_beta.1_arm64.deb - finished downloading
+00:38:51.178 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvidia-container0_0.9.0_beta.1_arm64.deb","isCached":true,"fileSize":42744,"cachedSize":42744}
+00:38:51.183 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libnvidia-container0_0.9.0_beta.1_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:51.184 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libnvidia-container-tools_0.9.0_beta.1_arm64.deb retry chain number 1
+00:38:51.194 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvidia-container-tools_0.9.0_beta.1_arm64.deb - started downloading
+00:38:51.234 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvidia-container-tools_0.9.0_beta.1_arm64.deb - checksum verifying
+00:38:51.235 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+00:38:51.276 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+00:38:51.277 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+00:38:51.529 - info: f7a3983260a0f22d0b3fd84829952794  /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+
+00:38:51.530 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb with correct checksum, skip downloading.
+00:38:51.531 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvidia-container-tools_0.9.0_beta.1_arm64.deb - finished downloading
+00:38:51.543 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvidia-container-tools_0.9.0_beta.1_arm64.deb","isCached":true,"fileSize":12596,"cachedSize":12596}
+00:38:51.545 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libnvidia-container-tools_0.9.0_beta.1_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:51.547 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-toolkit_1.0.1-1_arm64.deb retry chain number 1
+00:38:51.552 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-toolkit_1.0.1-1_arm64.deb - started downloading
+00:38:51.563 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-toolkit_1.0.1-1_arm64.deb - checksum verifying
+00:38:51.563 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb
+00:38:51.590 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb
+00:38:51.591 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb
+00:38:51.852 - info: 48cc6c5935636fafb6b2f1078f721cbc  /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb
+
+00:38:51.853 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb with correct checksum, skip downloading.
+00:38:51.854 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-toolkit_1.0.1-1_arm64.deb - finished downloading
+00:38:51.868 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-container-toolkit_1.0.1-1_arm64.deb","isCached":true,"fileSize":501768,"cachedSize":501768}
+00:38:51.868 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-toolkit_1.0.1-1_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:51.869 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-runtime_3.1.0-1_arm64.deb retry chain number 1
+00:38:51.870 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-runtime_3.1.0-1_arm64.deb - started downloading
+00:38:52.024 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-runtime_3.1.0-1_arm64.deb - checksum verifying
+00:38:52.024 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb
+00:38:52.042 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb
+00:38:52.042 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb
+00:38:52.312 - info: 5f72ea29de7fc6447a8d318e422db46a  /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb
+
+00:38:52.313 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb with correct checksum, skip downloading.
+00:38:52.314 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-container-runtime_3.1.0-1_arm64.deb - finished downloading
+00:38:52.345 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-container-runtime_3.1.0-1_arm64.deb","isCached":true,"fileSize":534888,"cachedSize":534888}
+00:38:52.345 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-runtime_3.1.0-1_arm64.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:52.346 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-docker2_2.2.0-1_all.deb retry chain number 1
+00:38:52.348 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-docker2_2.2.0-1_all.deb - started downloading
+00:38:52.576 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-docker2_2.2.0-1_all.deb - checksum verifying
+00:38:52.576 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb
+00:38:52.593 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb
+00:38:52.595 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb
+00:38:52.827 - info: cef544ada8bb548e9960987e930cb6fe  /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb
+
+00:38:52.828 - info: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb with correct checksum, skip downloading.
+00:38:52.829 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nvidia-docker2_2.2.0-1_all.deb - finished downloading
+00:38:52.829 - info: Event: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:52.830 - info: download duration for component NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:52.830 - info: Event: NV_DOCKER_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:52.850 - info: Event: {"type":"File init download status","groupId":"NV_DOCKER_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nvidia-docker2_2.2.0-1_all.deb","isCached":true,"fileSize":2940,"cachedSize":2940}
+00:38:52.852 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-docker2_2.2.0-1_all.deb was completed successfully for component: NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP#0.9.0
+00:38:52.853 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb retry chain number 1
+00:38:52.856 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb - started downloading
+00:38:52.904 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb - checksum verifying
+00:38:52.914 - info: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+00:38:52.930 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+00:38:52.931 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+00:38:55.548 - info: e81edbe75c376bdea8e8855a3be07072  /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+
+00:38:55.548 - info: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb with correct checksum, skip downloading.
+00:38:55.548 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb - finished downloading
+00:38:55.549 - info: Event: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2 - finished downloading
+00:38:55.549 - info: download duration for component NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2: 0.000s
+00:38:55.552 - info: Event: NV_MULTIMEDIA_API_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:55.582 - info: Event: {"type":"File init download status","groupId":"NV_MULTIMEDIA_API_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2","fileName":"nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb","isCached":true,"fileSize":69523310,"cachedSize":69523310}
+00:38:55.582 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb was completed successfully for component: NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP#32.5
+00:38:55.585 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb retry chain number 1
+00:38:55.586 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb - started downloading
+00:38:55.878 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb - checksum verifying
+00:38:55.888 - info: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+00:38:55.898 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+00:38:55.898 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+00:38:57.011 - info: 144759a8a51408b7ee19dc8cf05b99a9  /home/latelee/Downloads/nvidia/my_download/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2
+
+00:38:57.012 - info: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 with correct checksum, skip downloading.
+00:38:57.012 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 - finished downloading
+00:38:57.012 - info: Event: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2 - finished downloading
+00:38:57.014 - info: download duration for component NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2: 0.000s
+00:38:57.018 - info: Event: NV_JETPACK_L4T_IMAGE_SETUP_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:57.092 - info: Event: {"type":"File init download status","groupId":"NV_JETPACK_L4T_IMAGE_SETUP_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2","fileName":"Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2","isCached":true,"fileSize":1455248011,"cachedSize":1455248011}
+00:38:57.092 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 was completed successfully for component: NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP#32.5
+00:38:57.093 - info: Download for: https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/deepstream-5.0_5.0.1-1_arm64.deb retry chain number 1
+00:38:57.095 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - deepstream-5.0_5.0.1-1_arm64.deb - started downloading
+00:38:57.367 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - deepstream-5.0_5.0.1-1_arm64.deb - checksum verifying
+00:38:57.373 - info: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2: verifying checksum of /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb
+00:38:57.423 - info: get checksum by system command for /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb
+00:38:57.423 - info: running md5sum /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb
+00:38:58.452 - info: a151651f2aa625622b96909d9ced3029  /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+
+00:38:58.454 - info: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb with correct checksum, skip downloading.
+00:38:58.455 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb - finished downloading
+00:38:58.455 - info: Event: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:58.458 - info: download duration for component NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:58.459 - info: Event: NV_DEVTOOLS_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:58.529 - info: Event: {"type":"File init download status","groupId":"NV_DEVTOOLS_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb","isCached":true,"fileSize":47165864,"cachedSize":47165864}
+00:38:58.529 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb was completed successfully for component: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP#2020.5
+00:38:59.531 - info: 49e5766e4b8b4521aa1db73aa5a7b3da  /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+
+00:38:59.531 - info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb with correct checksum, skip downloading.
+00:38:59.532 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - libnvinfer-samples_7.1.3-1+cuda10.2_all.deb - finished downloading
+00:38:59.532 - info: Event: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:38:59.534 - info: download duration for component NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:38:59.535 - info: Event: NV_AI_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:38:59.563 - info: Event: {"type":"File init download status","groupId":"NV_AI_TARGET_GROUP@JETSON_TX2","compId":"NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"libnvinfer-samples_7.1.3-1+cuda10.2_all.deb","isCached":true,"fileSize":451820490,"cachedSize":451820490}
+00:38:59.564 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb was completed successfully for component: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP#7.1
+00:39:05.458 - info: dee0208396f276e3823c3aac42c04d7d  /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb
+
+00:39:05.460 - info: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2: Found file /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb with correct checksum, skip downloading.
+00:39:05.460 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - deepstream-5.0_5.0.1-1_arm64.deb - finished downloading
+00:39:05.460 - info: Event: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2 - finished downloading
+00:39:05.462 - info: download duration for component NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2: 0.000s
+00:39:05.462 - info: Event: NV_DEEPSTREAM_TARGET_GROUP@JETSON_TX2 - finished downloading
+00:39:05.497 - info: Stopping all currently running download services
+00:39:05.497 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Jetson_Linux_R32.5.0_aarch64.tbz2
+00:39:05.498 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2
+00:39:05.499 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+00:39:05.499 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+00:39:05.499 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+00:39:05.499 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+00:39:05.500 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+00:39:05.500 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+00:39:05.500 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+00:39:05.501 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+00:39:05.501 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+00:39:05.510 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+00:39:05.510 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+00:39:05.510 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+00:39:05.510 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+00:39:05.511 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.511 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.511 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.511 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.511 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.518 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.518 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.518 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.518 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.518 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+00:39:05.524 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+00:39:05.524 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:39:05.524 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.524 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.524 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.530 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.531 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.531 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+00:39:05.531 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-repo_1.6.0.501_arm64.deb
+00:39:05.531 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+00:39:05.531 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+00:39:05.532 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+00:39:05.532 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+00:39:05.532 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+00:39:05.532 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+00:39:05.532 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libnvidia-container0_0.9.0_beta.1_arm64.deb
+00:39:05.533 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+00:39:05.533 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-toolkit_1.0.1-1_arm64.deb
+00:39:05.533 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-runtime_3.1.0-1_arm64.deb
+00:39:05.533 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-docker2_2.2.0-1_all.deb
+00:39:05.533 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+00:39:05.534 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+00:39:05.534 - info: Stopping the download for:  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/deepstream-5.0_5.0.1-1_arm64.deb
+00:39:05.534 - error: cannot find data for  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/deepstream-5.0_5.0.1-1_arm64.deb
+00:39:05.535 - info: All done!
+00:39:05.572 - info: Event: {"type":"File init download status","groupId":"NV_DEEPSTREAM_TARGET_GROUP@JETSON_TX2","compId":"NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2","fileName":"deepstream-5.0_5.0.1-1_arm64.deb","isCached":true,"fileSize":429026460,"cachedSize":429026460}
+00:39:05.572 - info: Download file https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/deepstream-5.0_5.0.1-1_arm64.deb was completed successfully for component: NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP#5.0
+00:39:05.603 - info: 
+
+********************** Completed download for bundle JetPack 4.5 Linux for Jetson TX2 time: 04-Feb-2021-00.39:05 is succeeded: true **********************
+00:39:05.611 - info: Event: Session ended: JetPack 4.5 Linux for Jetson TX2
+00:39:05.632 - info: All required files were downloaded
+00:39:05.682 - info: cleaning the group map
+00:39:05.682 - info: BundleData constructMap
+00:39:06.918 - info: The overall duration (Download + Install) is 00:01:18
+
+00:39:06.937 - info: 
+*** Download Summary ***
+
+        - Bundle: JetPack 4.5 Linux for Jetson TX2
+        - Download server: DevZone
+        - 0B downloaded of 4.38GB
+        - Download started on: Thu Feb 04 2021 00:37:48 GMT+0800 (China Standard Time).
+        - Download ended on: Thu Feb 04 2021 00:39:06 GMT+0800 (China Standard Time).
+        - Download duration: 00:01:18.
+        - Average total download speed: 0B/s = total downloaded bytes / download duration.
+        - Average total bandwidth: 0B/s, average accumulation of all file chunk's speed, downloaded concurrently.
+        - Average file chunk's download speed: 0B/s, average of all downloaded file chunk's speed.
+        - Max 3 concurrent files using 6 threads.
+
+        Total 48 files:
+        - 0 downloaded, 48 cached, 0 failed, 0 skipped
+
+        Details:
+- Jetson_Linux_R32.5.0_aarch64.tbz2: Cached.
+- Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2: Cached.
+- cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb: Cached.
+- OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb: Cached.
+- OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb: Cached.
+- OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb: Cached.
+- OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb: Cached.
+- OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb: Cached.
+- vpi-lib-1.0.12-cuda10-aarch64-l4t.deb: Cached.
+- vpi-dev-1.0.12-cuda10-aarch64-l4t.deb: Cached.
+- vpi-samples-1.0.12-cuda10-aarch64-l4t.deb: Cached.
+- vpi-demos-1.0.12-cuda10-aarch64-l4t.deb: Cached.
+- libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb: Cached.
+- libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb: Cached.
+- libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb: Cached.
+- libnvinfer7_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvparsers7_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libnvinfer-doc_7.1.3-1+cuda10.2_all.deb: Cached.
+- libnvinfer-samples_7.1.3-1+cuda10.2_all.deb: Cached.
+- tensorrt_7.1.3.0-1+cuda10.2_arm64.deb: Cached.
+- python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb: Cached.
+- libvisionworks-repo_1.6.0.501_arm64.deb: Cached.
+- libvisionworks-sfm-repo_0.90.4.501_arm64.deb: Cached.
+- libvisionworks-tracking-repo_0.88.2.501_arm64.deb: Cached.
+- nvidia-container-csv-cuda_10.2.89-1_arm64.deb: Cached.
+- nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb: Cached.
+- nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb: Cached.
+- nvidia-container-csv-visionworks_1.6.0.501_arm64.deb: Cached.
+- libnvidia-container0_0.9.0_beta.1_arm64.deb: Cached.
+- libnvidia-container-tools_0.9.0_beta.1_arm64.deb: Cached.
+- nvidia-container-toolkit_1.0.1-1_arm64.deb: Cached.
+- nvidia-container-runtime_3.1.0-1_arm64.deb: Cached.
+- nvidia-docker2_2.2.0-1_all.deb: Cached.
+- nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb: Cached.
+- nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb: Cached.
+- deepstream-5.0_5.0.1-1_arm64.deb: Cached.
+
+*** End of Download Summary ***
+
+00:39:06.943 - info: 
+*** Install summary of 16 components ***
+
+        Install started on: did not start installing.
+
+        Install ended on: unknown end time.
+
+        Install duration:  0.000s .
+
+        Install idle time: 0.000s .
+
+        Real install duration (duration - idle time): 0.000s .
+
+        Install 2 components.
+
+            - Up-to-date 2 components.
+
+        Install failed 14 files.
+
+        Install skipped 0 files.
+
+        Install details:
+- NV_L4T_DRIVERS_T186_COMP@JETSON_TX2: Up-to-date.
+- NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP@JETSON_TX2: Up-to-date.
+- NV_DEVICE_MODE_SETUP_IMAGE_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_DEVICE_MODE_SETUP_TARGET_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_DATETIME_SETUP_TARGET_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_CUDA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_VPI_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+- NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP@JETSON_TX2: Failed - start: none - end: none.
+
+*** End of Install Summary ***
+
+00:39:07.482 - info: stdout: Querying the install status of 'CUDA on Host' (NV_CUDA_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+
+00:39:07.484 - info: stdout: Querying the install status of 'CUDA Cross Compile Package on Host' (NV_CUDA_CROSS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+
+00:39:07.484 - info: stdout: Querying the install status of 'VisionWorks on Host' (NV_VISIONWORKS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+
+00:39:07.486 - info: stdout: Querying the install status of 'VPI on Host' (NV_VPI_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+
+00:39:07.487 - info: stdout: Querying the install status of 'VPI Cross Compile Package on Host' (NV_VPI_CROSS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+
+00:39:07.487 - info: stdout: Querying the install status of 'NVIDIA Nsight Graphics' (NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+
+00:39:07.487 - info: stdout: Querying the install status of 'NVIDIA Nsight Systems' (NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP)
+exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+
+00:39:07.976 - info: stdout: Host Deb package  NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP NsightSystems-linux-public-2020.5.3.17-0256620.deb installed successfully.
+
+00:39:07.978 - info: Component: NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP version: 2020.5 for bundle: JetPack_4.5_Linux is installed
+00:39:07.987 - info: stdout: Host Deb package [{cuda-cross-aarch64-10-2 10.2.89}] not installed; [deb_name]: cuda-repo-cross-aarch64-10-2-local-10.2.89_1.0-1_all.deb
+
+00:39:07.988 - info: Component: NV_CUDA_CROSS_HOST_COMP version: 10.2 for bundle: JetPack_4.5_Linux is not installed
+00:39:07.992 - info: stdout: Host Deb package [{vpi1-cross-aarch64-l4t 1.0.12}] not installed; [deb_name]: vpi-cross-aarch64-l4t-1.0.12-cuda10-x86_64-linux.deb
+
+00:39:07.993 - info: stdout: Host Deb package  NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP NVIDIA_Nsight_Graphics_L4T_Public_2020.5.20329.deb installed successfully.
+
+00:39:07.994 - info: Component: NV_CUDA_HOST_COMP version: 10.2 for bundle: JetPack_4.5_Linux is not installed
+00:39:07.995 - info: Component: NV_VPI_HOST_COMP version: 1.0 for bundle: JetPack_4.5_Linux is not installed
+00:39:07.995 - info: Component: NV_VPI_CROSS_HOST_COMP version: 1.0 for bundle: JetPack_4.5_Linux is not installed
+00:39:07.995 - info: Component: NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP version: 2020.5 for bundle: JetPack_4.5_Linux is installed
+00:39:07.997 - info: stdout: Host Deb package [{libnvvpi1 1.0.12}] not installed; [deb_name]: vpi-lib-1.0.12-cuda10-x86_64-linux.deb
+
+00:39:07.997 - info: stdout: Host Deb package [{cuda-toolkit-10-2 10.2.89}] not installed; [deb_name]: cuda-repo-ubuntu1604-10-2-local-10.2.89-440.40_1.0-1_amd64.deb
+
+00:39:08.001 - info: stdout: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+
+00:39:08.069 - info: stdout: exec_command: dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+
+00:39:08.129 - info: stdout: Host Deb package [{libvisionworks 1.6.0.501} {libvisionworks-dev 1.6.0.501} {libvisionworks-samples 1.6.0.501}] not installed; [deb_name]: libvisionworks-repo_1.6.0.501_amd64.deb
+
+00:39:08.130 - info: Component: NV_VISIONWORKS_HOST_COMP version: 1.6 for bundle: JetPack_4.5_Linux is not installed
+00:39:08.156 - info: cleaning the group map
+00:39:08.157 - info: BundleData constructMap
+00:39:08.250 - warn: comp NV_L4T_DRIVERS_T194_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:39:08.250 - warn: comp NV_L4T_DRIVERS_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2
+00:39:08.250 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T194_COMP 32.5]
+00:39:08.250 - warn: comp NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP filtered out, due to invalid dependencies: [NV_L4T_DRIVERS_T210_COMP 32.5]
+00:39:08.251 - warn: comp NV_L4T_FLASH_XAVIER_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:39:08.251 - warn: comp NV_L4T_FLASH_XAVIER_8GB_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:39:08.251 - warn: comp NV_L4T_FLASH_XAVIER_NX_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:39:08.252 - warn: comp NV_L4T_FLASH_XAVIER_NX_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T194_COMP 32.5]
+00:39:08.252 - warn: comp NV_L4T_FLASH_TX2_4GB_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2_4GB], not include JETSON_TX2
+00:39:08.252 - warn: comp NV_L4T_FLASH_TX2I_WITH_OS_IMAGE_COMP filtered out, due to supported targetIDs [JETSON_TX2I], not include JETSON_TX2
+00:39:08.252 - warn: comp NV_L4T_FLASH_TX1_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:39:08.252 - warn: comp NV_L4T_FLASH_NANO_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:39:08.253 - warn: comp NV_L4T_FLASH_NANO_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:39:08.253 - warn: comp NV_L4T_FLASH_NANO_2GB_DEVKIT_WITH_OS_IMAGE_COMP filtered out, due to invalid dependencies: [NV_L4T_FILE_SYSTEM_AND_OS_T210_COMP 32.5]
+00:39:08.254 - warn: comp NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP filtered out, due to supported targetIDs [JETSON_AGX_XAVIER,JETSON_AGX_XAVIER_8GB,JETSON_XAVIER_NX_DEVKIT,JETSON_XAVIER_NX], not include JETSON_TX2
+00:39:08.256 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T194_COMP filtered out, due to invalid dependencies: [NV_L4T_TENSORRT_DLA_TARGET_POST_INSTALL_COMP 7.1]
+00:39:08.257 - warn: comp NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T210_COMP filtered out, due to supported targetIDs [JETSON_TX1,JETSON_NANO_DEVKIT,JETSON_NANO,JETSON_NANO_2GB_DEVKIT], not include JETSON_TX2

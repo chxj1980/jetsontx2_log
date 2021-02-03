@@ -1,0 +1,118 @@
+22:19:30.064 - info: SDK Manager started running at: 2021-02-03 22:19:30.062
+22:19:30.066 - info: SDK Manager log file name: sdkm-2021-02-03-22-19-29.log
+22:19:30.067 - info: SDK Manager client version: 1.4.0
+22:19:30.068 - info: SDK Manager is running in GUI mode
+22:19:42.557 - info: Current DB Version:  14
+22:19:51.089 - warn: Registering a callback with no name for event: System settings table changed after getting machineInfo
+22:19:53.670 - info: User agent for http requests: SDKM/1.4.0.7363 (Ubuntu 1604)
+22:19:54.513 - warn: Registering a callback with no name for event: Session started
+22:19:55.447 - warn: Registering a callback with no name for event: Session started
+22:19:55.448 - warn: Registering a callback with no name for event: Report component install/uninstall error messages
+22:19:55.448 - warn: Registering a callback with no name for event: Report component install/uninstall error code/type
+22:19:55.451 - info: downloadMetrics.reset
+22:19:55.451 - warn: Registering a callback with no name for event: Session started
+22:19:55.451 - warn: Registering a callback with no name for event: Session resumed
+22:19:55.453 - warn: Registering a callback with no name for event: Session started
+22:19:55.454 - warn: Registering a callback with no name for event: Session ended
+22:19:55.454 - warn: Registering a callback with no name for event: File init download status
+22:19:55.455 - warn: Registering a callback with no name for event: File pending download
+22:19:55.455 - warn: Registering a callback with no name for event: File started downloading
+22:19:55.456 - warn: Registering a callback with no name for event: File finished downloading
+22:19:55.456 - warn: Registering a callback with no name for event: File checksum verifying
+22:19:55.456 - warn: Registering a callback with no name for event: Component init status
+22:19:55.457 - warn: Registering a callback with no name for event: Component started action
+22:19:55.457 - warn: Registering a callback with no name for event: Component finished pausing download
+22:19:55.457 - warn: Registering a callback with no name for event: Component finished resuming download
+22:19:55.458 - warn: Registering a callback with no name for event: Component finished action
+22:19:55.460 - warn: Registering a callback with no name for event: Session started
+22:19:55.460 - warn: Registering a callback with no name for event: Component finished action
+22:19:55.628 - warn: Registering a callback with no name for event: Active bundle loaded
+22:19:55.628 - warn: Registering a callback with no name for event: Component finished action
+22:19:55.631 - info: Forking worker process
+22:19:55.666 - info: Initializing the download service
+22:19:55.706 - info: Download service pid is: 4387
+22:19:55.727 - warn: Registering a callback with no name for event: File download in progress
+22:19:55.728 - warn: Registering a callback with no name for event: File finished downloading
+22:19:55.735 - warn: Registering a callback with no name for event: Session started
+22:19:55.735 - warn: Registering a callback with no name for event: File download in progress
+22:19:55.735 - warn: Registering a callback with no name for event: File finished downloading
+22:19:55.735 - warn: Registering a callback with no name for event: File reset downloaded size
+22:19:55.735 - warn: Registering a callback with no name for event: File download size updated
+22:19:55.736 - warn: Registering a callback with no name for event: Component init status
+22:19:55.736 - warn: Registering a callback with no name for event: Component started action
+22:19:55.736 - warn: Registering a callback with no name for event: Component progress for action
+22:19:55.736 - warn: Registering a callback with no name for event: Component finished action
+22:19:55.738 - info: Download manager can use up to 6 download threads per file
+22:19:55.738 - warn: Registering a callback with no name for event: Session started
+22:19:56.781 - info: create .sdkm.bashrc under /home/latelee/.nvsdkm/.sdkm.bashrc
+22:19:56.808 - info: installMetrics.reset
+22:19:56.809 - warn: Registering a callback with no name for event: Session started
+22:19:56.809 - info: uninstallMetrics.reset
+22:19:56.810 - warn: Registering a callback with no name for event: Active bundle loaded
+22:19:56.814 - warn: Registering a callback with no name for event: Active bundle loaded
+22:19:56.814 - warn: Registering a callback with no name for event: Component finished action
+22:19:56.815 - warn: Registering a callback with no name for event: File finished downloading
+22:19:56.815 - warn: Registering a callback with no name for event: Component finished downloading
+22:19:56.815 - warn: Registering a callback with no name for event: Session started
+22:19:56.815 - warn: Registering a callback with no name for event: Session resumed
+22:19:56.816 - warn: Registering a callback with no name for event: Session paused
+22:19:56.816 - warn: Registering a callback with no name for event: Session complete when pausing
+22:19:58.256 - warn: Registering a callback with no name for event: File started downloading
+22:19:58.256 - warn: Registering a callback with no name for event: File download in progress
+22:19:58.257 - warn: Registering a callback with no name for event: File checksum verifying
+22:19:58.257 - warn: Registering a callback with no name for event: File finished downloading
+22:20:10.176 - warn: Registering a callback with no name for event: Active bundle loaded
+22:20:10.232 - warn: Registering a callback with no name for event: Terminal output
+22:20:10.232 - warn: Registering a callback with no name for event: Login Progress
+22:20:10.232 - warn: Registering a callback with no name for event: undefined
+22:20:10.233 - warn: Registering a callback with no name for event: Component download in progress
+22:20:10.233 - warn: Registering a callback with no name for event: Component progress for action
+22:20:10.233 - warn: Registering a callback with no name for event: Component started action
+22:20:10.233 - warn: Registering a callback with no name for event: File started downloading
+22:20:10.233 - warn: Registering a callback with no name for event: Component init status
+22:20:10.233 - warn: Registering a callback with no name for event: Component finished pausing download
+22:20:10.234 - warn: Registering a callback with no name for event: Component finished resuming download
+22:20:10.234 - warn: Registering a callback with no name for event: Component finished downloading
+22:20:10.234 - warn: Registering a callback with no name for event: Group finished downloading
+22:20:10.234 - warn: Registering a callback with no name for event: Component finished action
+22:20:10.234 - warn: Registering a callback with no name for event: Session paused
+22:20:10.235 - warn: Registering a callback with no name for event: Session resumed
+22:20:10.248 - info: Logger level is set to: info
+22:20:12.352 - warn: Registering a callback with no name for event: Login Progress
+22:20:12.352 - warn: Registering a callback with no name for event: CLI Abort
+22:20:12.561 - info: Front-end main function (startMain) was called
+22:20:13.241 - info: Creating auto update task
+22:20:14.589 - info: Host OS: Ubuntu1604
+22:20:14.603 - info: packageJson: /opt/nvidia/sdkmanager/resources/app/package.json
+22:20:14.664 - info: [Download Service]:Download service is initializing
+Download service was initialized
+Got heartbeat request
+
+22:20:14.665 - info: [Download Service] Download service is alive
+22:20:15.327 - info: Application configuration is: 
+{
+  mainRepoURL: 'https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json',
+  PIDServer: 'P',
+  DevZoneServer: 'P',
+  StarfleetServer: 'P'
+}
+22:20:15.512 - info: manifest: {"name":"sdkmanager","releaseVersion":"1.4.0","releaseRevision":"0","releaseBuild":"7363","release":false,"chrome":"78.0.3904.113"}
+22:20:15.512 - info: Telemetry parameters are: title: SDK Manager 1.4.0.7363 version: 1.4.0 dev: 0 internal: false 
+22:20:15.513 - info: autoLogin failed: Aborting auto login since there is no logged in user
+22:20:15.513 - info: Telemetry: allow = Allow. isGDPRAllowed=true
+22:20:15.513 - info: Initializing Telemetry visitor. Application: SDK Manager 1.4.0.7363. Version: 1.4.0.7363. clientMode: UI. isDevelopmentEnvironment: 0. NV User: false
+22:20:15.517 - info: Initialized Telemetry for SDK Manager. TrackID: UA-59254929-54. UserID: 5953ece6-e542-5455-8c9c-c045e2cf7492.
+22:20:15.517 - info: Telemetry: setting custom dimensions: UserType, SDKMode, SDKMVersion External UI 1.4.0.7363
+22:20:15.517 - info: Setting custom dimension: UserType - cd5, External
+22:20:15.517 - info: Setting custom dimension: SDKMode - cd6, UI
+22:20:15.518 - info: Setting custom dimension: SDKMVersion - cd8, 1.4.0.7363
+22:20:15.618 - info: mainRepoUrl: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+22:20:15.632 - info: logging in with l1 url: https://developer.download.nvidia.com/sdkmanager/sdkm-config/main/sdkml1_repo.json
+22:20:16.285 - info: Create timing task for auto update successfully.
+22:42:41.771 - info: logging in to starfleet server
+22:42:41.773 - info: Logging in with starfleet login method...
+22:42:41.888 - info: Event: Login Progress: undefined
+22:42:44.603 - info: Listening to Starfleet Redirect URL on port: 8080
+22:42:44.605 - info: Listening to Starfleet Development signin URL on port: 41839
+22:42:44.605 - info: Openning login URL in browser:  https://login.nvidia.com/authorize?response_mode=query&response_type=id_token+token&device_id=817a7be0154c2fb71224d7c71b80d9945f0060baefd2a7aa9f4ae7c288d2aebf&scope=openid+consent+email&client_id=_gWkp8NvPxc7svfRKyXJ4IseQyYupLhWJiMxyPy0gm4&prompt=login&ui_locales=en_US&nonce=67676767&state=http://localhost:41839&redirect_uri=http://localhost:8080
+22:42:44.622 - info: Event: Login Progress: Waiting for user to complete login in the external browser...

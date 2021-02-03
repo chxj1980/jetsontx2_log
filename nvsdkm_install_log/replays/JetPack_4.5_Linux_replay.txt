@@ -1,0 +1,2215 @@
+export _xdk_type=
+
+#INFO: Start to query NV_DEVICE_MODE_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_DATETIME_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' cuda-toolkit-10-2"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8-doc"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer7"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' opencv-licenses"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-python"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-samples"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-samples"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VPI_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvvpi1"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-cuda"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nsight-systems-cli-2020.5.3"
+export _xdk_type=
+
+#INFO: Start to query NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' deepstream-5.0"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_CUDA_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+dpkg -c /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-key add /var/cuda-repo-10-2-local-10.2.89/7fa2af80.pub" 5
+sleep 2
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install cuda-toolkit-10-2 " 5
+safe_apt_install "sudo apt-get purge -y cuda-repo-l4t-10-2-local-10.2.89" 5
+sudo rm -f /opt/nvidia/deb_repos/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' cuda-toolkit-10-2"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_VPI_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/vpi-lib-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvvpi1"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' vpi1-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' vpi1-samples"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VPI_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' vpi1-demos"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer7"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-plugin7"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-plugin-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvonnxparsers7"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvonnxparsers-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvparsers7"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvparsers-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-bin"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-doc"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-samples"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' tensorrt"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python-libnvinfer"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python-libnvinfer-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python3-libnvinfer"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python3-libnvinfer-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' graphsurgeon-tf"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' uff-converter-tf"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-repo_1.6.0.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+dpkg -c /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libvisionworks-repo_1.6.0.501_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install libvisionworks libvisionworks-dev libvisionworks-samples " 5
+safe_apt_install "sudo apt-get purge -y libvisionworks-repo" 5
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-repo_1.6.0.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-samples"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+dpkg -c /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libvisionworks-sfm-repo_0.90.4.501_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install libvisionworks-sfm libvisionworks-sfm-dev " 5
+safe_apt_install "sudo apt-get purge -y libvisionworks-sfm-repo" 5
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-sfm"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-sfm-dev"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+dpkg -c /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libvisionworks-tracking-repo_0.88.2.501_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install libvisionworks-tracking libvisionworks-tracking-dev " 5
+safe_apt_install "sudo apt-get purge -y libvisionworks-tracking-repo" 5
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-tracking"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-tracking-dev"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cuda_10.2.89-1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-container-csv-cuda_10.2.89-1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-cuda_10.2.89-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-cuda"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-cudnn_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-cudnn"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-tensorrt"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-visionworks"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvidia-container0_0.9.0_beta.1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvidia-container0_0.9.0_beta.1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvidia-container0_0.9.0_beta.1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvidia-container0_0.9.0_beta.1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvidia-container0"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libnvidia-container-tools_0.9.0_beta.1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvidia-container-tools_0.9.0_beta.1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvidia-container-tools_0.9.0_beta.1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvidia-container-tools"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-toolkit_1.0.1-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-container-toolkit_1.0.1-1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-container-toolkit_1.0.1-1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-toolkit_1.0.1-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-toolkit"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-runtime_3.1.0-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-container-runtime_3.1.0-1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-container-runtime_3.1.0-1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-container-runtime_3.1.0-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-runtime"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-docker2_2.2.0-1_all.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-docker2_2.2.0-1_all.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-docker2_2.2.0-1_all.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-docker2_2.2.0-1_all.deb
+
+#****** end of  /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-docker2"
+sudo pkill -SIGHUP dockerd
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/deepstream-5.0_5.0.1-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/deepstream-5.0_5.0.1-1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/deepstream-5.0_5.0.1-1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/deepstream-5.0_5.0.1-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' deepstream-5.0"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"

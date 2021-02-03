@@ -1,0 +1,1947 @@
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg -f /home/latelee/Downloads/nvidia/my_download/NVIDIA_Nsight_Graphics_L4T_Public_2020.5.20329.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/NVIDIA_Nsight_Graphics_L4T_Public_2020.5.20329.deb Version | tr -d '\n'
+/bin/bash -c sudo -E apt-get install -y --allow-downgrades '/home/latelee/Downloads/nvidia/my_download/NVIDIA_Nsight_Graphics_L4T_Public_2020.5.20329.deb' 
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg -f /home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb Version | tr -d '\n'
+/bin/bash -c sudo -E apt-get install -y --allow-downgrades '/home/latelee/Downloads/nvidia/my_download/NsightSystems-linux-public-2020.5.3.17-0256620.deb' 
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_DRIVERS_T186_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+sudo rm -rf /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra/
+/tmp/tmp_NV_L4T_DRIVERS_T186_COMP.sh
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra/rootfs/
+/tmp/tmp_NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP.sh
+/tmp/tmp_NV_L4T_FILE_SYSTEM_AND_OS_T186_COMP.sh
+export _xdk_type=
+
+#INFO: Start to install NV_DEVICE_MODE_SETUP_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+/tmp/tmp_NV_DEVICE_MODE_SETUP_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra
+/tmp/tmp_NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP.sh
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+
+#INFO: Start to query NV_VPI_HOST_COMP
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to install NV_DEVICE_MODE_SETUP_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+/tmp/tmp_NV_DEVICE_MODE_SETUP_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra
+/tmp/tmp_NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to query NV_DEVICE_MODE_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_DATETIME_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' cuda-toolkit-10-2"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer7"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-samples"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VPI_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvvpi1"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-cuda"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nsight-systems-cli-2020.5.3"
+export _xdk_type=
+
+#INFO: Start to query NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' deepstream-5.0"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' opencv-licenses"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-python"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-samples"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to install NV_DEVICE_MODE_SETUP_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+/tmp/tmp_NV_DEVICE_MODE_SETUP_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra
+/tmp/tmp_NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to query NV_DEVICE_MODE_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_DATETIME_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' cuda-toolkit-10-2"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer7"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-samples"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VPI_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvvpi1"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-cuda"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nsight-systems-cli-2020.5.3"
+export _xdk_type=
+
+#INFO: Start to query NV_DEEPSTREAM_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' deepstream-5.0"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' opencv-licenses"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-python"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-samples"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@172.18.18.8:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb' tx2@172.18.18.8:/opt/nvidia/deb_repos/
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+
+#INFO: Start to query NV_VPI_HOST_COMP
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+export _xdk_type=
+
+#INFO: Start to install NV_DEVICE_MODE_SETUP_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+/tmp/tmp_NV_DEVICE_MODE_SETUP_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP
+cd /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra
+/tmp/tmp_NV_L4T_FLASH_TX2_WITH_OS_IMAGE_COMP.sh
+export _xdk_type=
+
+#INFO: Start to query NV_DEVICE_MODE_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_DATETIME_SETUP_TARGET_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' cuda-toolkit-10-2"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer7"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-dev"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-samples"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_VPI_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvvpi1"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_DOCKER_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-container-csv-cuda"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_MULTIMEDIA_API_TARGET_POST_INSTALL_T186_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nsight-systems-cli-2020.5.3"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' opencv-licenses"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-python"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/OpenCV-4.1.1-2-gd5a58aa75-aarch64-samples.deb
+
+#****** end of  /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_OPENCV_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-samples"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8-dev"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libcudnn8-doc_8.0.0.180-1+cuda10.2_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDNN_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libcudnn8-doc"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to install NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb Package | tr -d '\n'
+dpkg -f /home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb Version | tr -d '\n'
+# cat /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh"
+scp -F /dev/null -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o ConnectTimeout=5 -r '/home/latelee/Downloads/nvidia/my_download/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb' tx2@192.168.55.1:/opt/nvidia/deb_repos/
+# cat /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh
+
+
+#****** beginning of  /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh ******
+
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/nsight-systems-cli-2020.5.3_2020.5.3.17-1_arm64.deb
+
+#****** end of  /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh ******
+
+
+scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_NVIDIA_NSIGHT_SYSTEMS_TARGET_POST_INSTALL_COMP.sh"
+cd /tmp
+ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nsight-systems-cli-2020.5.3"
+ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_HOST_COMP
+
+#INFO: Start to query NV_CUDA_CROSS_HOST_COMP
+
+#INFO: Start to query NV_VISIONWORKS_HOST_COMP
+
+#INFO: Start to query NV_CUDA_HOST_COMP
+export _xdk_type=
+
+#INFO: Start to query NV_VPI_CROSS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-toolkit-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' cuda-cross-aarch64-10-2
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' vpi1-cross-aarch64-l4t
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libnvvpi1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_GRAPHICS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-graphics-for-embeddedlinux-2020.5.1
+export _xdk_type=
+
+#INFO: Start to query NV_L4T_NVIDIA_NSIGHT_SYSTEMS_HOST_COMP
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' nsight-systems-2020.5.3
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-dev
+dpkg-query -W -f='${db:Status-abbrev} ${Version}' libvisionworks-samples

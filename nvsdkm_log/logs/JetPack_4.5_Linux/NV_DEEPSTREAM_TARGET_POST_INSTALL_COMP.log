@@ -1,0 +1,4 @@
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' deepstream-5.0"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' deepstream-5.0"

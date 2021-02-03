@@ -1,0 +1,10 @@
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-dev"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' opencv-licenses"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-python"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libopencv-samples"

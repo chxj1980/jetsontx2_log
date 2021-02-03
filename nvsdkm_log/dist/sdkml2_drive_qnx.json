@@ -1,0 +1,351 @@
+{
+    "information": {
+        "title": "Drive QNX PDK Versions Releases",
+        "fileVersion": "5",
+        "fileRevision": 0,
+        "serverConfigurationBuild": "1246D"
+    },
+    "releases": [
+        {
+            "productCategory": "DRIVE",
+            "targetOS": "QNX",
+            "serverType": [
+                "PID",
+                "DEVZONE"
+            ],
+            "id": "NV_DRIVE_QNX_BUNDLE",
+            "title": "DRIVE OS 5.2.3 SDK",
+            "releaseVersion": "5.2.3",
+            "releaseEdition": "OS",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "targetType": "SDK",
+            "minSDKMVer": "1.3.0",
+            "maxSDKMVer": "",
+            "releaseMessage": "",
+            "showInMainList": true,
+            "pidGroupId": "941",
+            "devzoneProgramId": ["-1"],
+            "targetHW": [
+                "DDPX"
+            ],
+            "hostOperatingSystemsSupportFor": {
+                "displayWarningForOS": [],
+                "hostGroups": [
+                    "ubuntu1804"
+                ],
+                "targetGroups": [
+                    "ubuntu1804"
+                ]
+            },
+            "QNX_Toolchain": "BC700_6762_sdp704-343",
+            "isInstallOnTargetEnabled": false,
+            "IntHWSupport": true,
+            "releaseNotes": {
+                "releaseNotesTitle": "What's New",
+                "releaseNotesURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1066216",
+                "releaseNotesTooltip": "<div><span class=\"tooltip-title\">What's new in DRIVE OS 5.2.3:</span><ul><li>Significant PKCS #11 security feature improvements</li><li>DRIVE OS QNX for safety proxy comes with NvMedia SIPL safety proxy and NvStream safety proxy support</li><li>SIPL framework provides capability to register Custom Auto Control Algorithms to control Auto Exposure and Auto White Balance settings</li><li>Significant NvMedia 2D Image format conversions supported</li><li>SIPL framework supports capture from YUV sensors with YUV422 YUYV formats supported</li></ul></div>",
+                "releaseNotesDownload": true
+            },
+            "updateInfo": [
+                {
+                    "releaseVersion": "XXX"
+                }
+            ],
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_PDK",
+                    "version": "5.2.3",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.2.3_OS_0"
+                },
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_SAFETY_SDK",
+                    "version": "5.2.3",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.2.3_OS_0"
+                }
+            ],
+            "schemaVersion": "8.0",
+            "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1066191"
+        },
+        {
+            "productCategory": "DRIVE",
+            "targetOS": "QNX",
+            "serverType": [
+                "PID",
+                "DEVZONE"
+            ],
+            "id": "NV_DRIVE_QNX_BUNDLE",
+            "title": "DRIVE OS 5.2.0 SDK",
+            "releaseVersion": "5.2.0.0",
+            "releaseEdition": "OS",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "targetType": "SDK",
+            "minSDKMVer": "1.2.0",
+            "maxSDKMVer": "",
+            "releaseMessage": "",
+            "showInMainList": true,
+            "pidGroupId": "817",
+            "devzoneProgramId": ["-1"],
+            "targetHW": [
+                "DDPX"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "QNX_Toolchain": "BC700_6762_sdp704-343",
+            "isInstallOnTargetEnabled": false,
+            "IntHWSupport": true,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1062657",
+                "releaseNotesTooltip": "<p><span class=\"\\&quot;tooltip-title\\&quot;\">What's new in DRIVE OS 5.2.0:</span></p><ul><li>DRIVE OS for Safety Proxy</li><li>Significant image quality improvements</li><li>SIPL now supports YUV 8b VUYX BL format</li></ul>",
+                "releaseNotesDownload": true
+            },
+            "updateInfo": [
+                {
+                    "releaseVersion": "XXX"
+                }
+            ],
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_PDK",
+                    "version": "5.2.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.2.0.0_OS_0"
+                },
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_SDK_OPENDDS",
+                    "version": "5.2.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.2.0.0_OS_0"
+                }
+            ],
+            "schemaVersion": "2.0",
+            "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1062660"
+        },
+        {
+            "productCategory": "DRIVE",
+            "targetOS": "QNX",
+            "serverType": [
+                "PID",
+                "DEVZONE"
+            ],
+            "id": "NV_DRIVE_QNX_BUNDLE",
+            "title": "DRIVE OS 5.1.15.0 SDK",
+            "releaseVersion": "5.1.15.0",
+            "releaseEdition": "OS",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "targetType": "SDK",
+            "minSDKMVer": "1.1.0",
+            "maxSDKMVer": "",
+            "releaseMessage": "",
+            "showInMainList": false,
+            "pidGroupId": "782",
+            "devzoneProgramId": ["-1"],
+            "targetHW": [
+                "DDPX"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "QNX_Toolchain": "BC700_6762_sdp704-343",
+            "estimateTargetDiskSizeInGB": "",
+            "isInstallOnTargetEnabled": false,
+            "IntHWSupport": true,
+            "releaseNotes": {
+                "releaseNotesTitle": "",
+                "releaseNotesURL": "",
+                "releaseNotesTooltip": "",
+                "releaseNotesDownload": true
+            },
+            "updateInfo": [
+                {
+                    "releaseVersion": "XXX"
+                }
+            ],
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_PDK",
+                    "version": "5.1.15.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.1.15.0_OS_0"
+                },
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_SDK_OPENDDS",
+                    "version": "5.1.15.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.1.15.0_OS_0"
+                },
+                {
+                    "id": "NV_DRIVE_QNX_ADDITIONAL_SAFETY_SDK",
+                    "version": "5.1.15.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "DRIVE_QNX_5.1.15.0_OS_0"
+                }
+            ],
+            "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1054324"
+        }
+    ],
+    "additionalSDKs": {
+        "NV_DRIVE_QNX_ADDITIONAL_SDK_OPENDDS": {
+            "id": "NV_DRIVE_QNX_ADDITIONAL_SDK_OPENDDS",
+            "title": "OpenDDS",
+            "description": "DDS (Data Distribution Service) is a networking middleware for data exchanges using publish-subscribe pattern for real time distributed applications.",
+            "versions": [
+                {
+                    "version": "5.2.0",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.2.0.0_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "818",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1062621"
+                },
+                {
+                    "version": "5.1.15.0",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.1.15.0_OS_0",
+                    "estimateTargetDiskSizeInGB": "0.63",
+                    "pidGroupId": "782",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1054355"
+                },
+                {
+                    "version": "5.1.12.4",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.1.12.4_OS_0",
+                    "estimateTargetDiskSizeInGB": "0.63",
+                    "pidGroupId": "724",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1051760",
+                    "intHWCompURL": ""
+                }
+            ]
+        },
+        "NV_DRIVE_QNX_ADDITIONAL_PDK": {
+            "id": "NV_DRIVE_QNX_ADDITIONAL_PDK",
+            "title": "PDK",
+            "description": "The DRIVE OS Platform Development Kit (PDK) is used to port DRIVE OS to run on custom DRIVE AGX-based hardware.",
+            "versions": [
+                {
+                    "version": "5.2.3",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.2.3_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "942",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1066221",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "5.2.0",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.2.0.0_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "818",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1062625"
+                },
+                {
+                    "version": "5.1.15.0",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.1.15.0_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "781",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1054339"
+                },
+                {
+                    "version": "5.1.12.4",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.1.12.4_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "722",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1051646",
+                    "intHWCompURL": ""
+                }
+            ]
+        },
+        "NV_DRIVE_QNX_ADDITIONAL_SAFETY_SDK": {
+            "id": "NV_DRIVE_QNX_ADDITIONAL_SAFETY_SDK",
+            "title": "SAFETY SDK",
+            "description": "Customers performing platform development",
+            "versions": [
+                {
+                    "version": "5.2.3",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.2.3_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "943",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": true,
+                    "installedOn": [
+                        "host",
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1066242",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "5.1.15.0",
+                    "revision": 0,
+                    "baseReleaseId": "DRIVE_QNX_5.1.15.0_OS_0",
+                    "estimateTargetDiskSizeInGB": "",
+                    "pidGroupId": "783",
+                    "devzoneProgramId": ["-1"],
+                    "canInstallStandAlone": true,
+                    "installedOn": [
+                        "host",
+                        "target"
+                    ],
+                    "compRepoURL": "https://nvonlineapi.nvidia.com/NVOnlineAPI/api/downloadfile?docid=1054353"
+                }
+            ]
+        }
+    }
+}

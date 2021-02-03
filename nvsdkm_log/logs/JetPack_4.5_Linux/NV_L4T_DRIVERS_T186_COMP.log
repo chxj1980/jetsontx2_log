@@ -1,0 +1,67 @@
+Info: [host] [ Disk Avail:119.85 GB ]
+Info: NV_L4T_DRIVERS_T186_COMP include 1 package
+Info: change working directory to /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+Info: [ Package PreInstall Started ]
+Info: current working directory is /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+Info: exec_command: sudo rm -rf /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2/Linux_for_Tegra/
+Info: [ Package PreInstall Finished Successfully ]
+Info: [ Package Install Started ]
+Info: current working directory is /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+Info: exec_command [host]:
+**********************
+#!/bin/bash
+set -e
+
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 2>&1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 2>&1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo apt-get update " 5
+safe_apt_install "sudo apt-get install -y pigz lbzip2" 5
+tar xf /home/latelee/Downloads/nvidia/my_download/Jetson_Linux_R32.5.0_aarch64.tbz2
+**********************
+Info: exec_command: /tmp/tmp_NV_L4T_DRIVERS_T186_COMP.sh
+*begin sudo apt-get update , 5
+Hit:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu xenial InRelease
+Hit:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu xenial-updates InRelease
+Hit:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu xenial-backports InRelease
+Hit:4 http://mirrors.tuna.tsinghua.edu.cn/ubuntu xenial-security InRelease
+Reading package lists...
+*begin sudo apt-get install -y pigz lbzip2, 5
+Reading package lists...
+Building dependency tree...
+Reading state information...
+pigz is already the newest version (2.3.1-2).
+pigz set to manually installed.
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-72 linux-headers-4.15.0-72-generic
+  linux-image-4.15.0-72-generic linux-modules-4.15.0-72-generic
+  linux-modules-extra-4.15.0-72-generic
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  lbzip2
+0 upgraded, 1 newly installed, 0 to remove and 241 not upgraded.
+Need to get 71.3 kB of archives.
+After this operation, 180 kB of additional disk space will be used.
+Get:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu xenial/universe amd64 lbzip2 amd64 2.5-1 [71.3 kB]
+Fetched 71.3 kB in 0s (205 kB/s)
+Selecting previously unselected package lbzip2.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 287783 files and directories currently installed.)
+Preparing to unpack .../lbzip2_2.5-1_amd64.deb ...
+Unpacking lbzip2 (2.5-1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up lbzip2 (2.5-1) ...
+Info: [ Package Install Finished Successfully ]
+Info: [host] [ 392.61 MB used. Disk Avail: 119.47 GB ]
+Info: [ NV_L4T_DRIVERS_T186_COMP Install took 2m25s ]

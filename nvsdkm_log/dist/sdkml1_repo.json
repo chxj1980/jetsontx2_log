@@ -1,0 +1,75 @@
+{
+    "information": {
+        "title": "SDK Manager supported releases index",
+        "version": "3",
+        "revision": 0,
+        "serverConfigurationBuild": "1003D584J23C"
+    },
+    "productCategories": [
+        {
+            "categoryName": "DRIVE",
+            "productLines": [
+                {
+                    "targetOS": "Linux",
+                    "targetType": "",
+                    "serverType": [
+                        "PID",
+                        "DEVZONE"
+                    ],
+                    "releasesIndexURL": "../DRIVE/Linux/sdkml2_drive_linux.json"
+                },
+                {
+                    "targetOS": "QNX",
+                    "targetType": "",
+                    "serverType": [
+                        "PID",
+                        "DEVZONE"
+                    ],
+                    "releasesIndexURL": "../DRIVE/QNX/sdkml2_drive_qnx.json"
+                }
+            ]
+        },
+        {
+            "categoryName": "Jetson",
+            "productLines": [
+                {
+                    "targetOS": "Linux",
+                    "targetType": "",
+                    "serverType": [
+                        "PID",
+                        "DEVZONE"
+                    ],
+                    "releasesIndexURL": "../Jetson/Linux/sdkml2_jetson_linux.json"
+                }
+            ]
+        },
+        {
+            "categoryName": "Clara",
+            "productLines": [
+                {
+                    "targetOS": "Linux",
+                    "targetType": "",
+                    "serverType": [
+                        "PID",
+                        "DEVZONE"
+                    ],
+                    "releasesIndexURL": "../Clara/Linux/sdkml2_clara_linux.json"
+                }
+            ]
+        },
+        {
+            "categoryName": "SDK Manager",
+            "productLines":[
+                {
+                    "targetOS": "",
+                    "targetType": "",
+                    "serverType": [
+                        "PID",
+                        "DEVZONE"
+                    ],
+                    "releasesIndexURL": "../SDKMANAGER/Linux/sdkml2_sdkmanager_linux_deb.json"
+                }
+            ]
+        }
+    ]
+}

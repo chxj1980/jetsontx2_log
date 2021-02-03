@@ -1,0 +1,48 @@
+Info: [host] [ Disk Avail:99.82 GB ]
+Info: change working directory to /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+Info: [ Component Install Started ]
+Info: current working directory is /home/latelee/nvidia/nvidia_sdk/JetPack_4.5_Linux_JETSON_TX2
+Info: exec_command [host]:
+**********************
+#!/bin/bash
+set -e
+set +e
+eth_port_name=$(ip route show default | awk '/default via/ {print $5; exit}')
+if [[ $eth_port_name == '' ]]; then
+   echo 'Could not find route default $eth_port_name, device mode setup failed!'
+   exit 0
+fi
+echo 'Found route default' $eth_port_name', setting up device mode'
+setup_t='192.168.55.0/24'
+sudo iptables -t nat -A POSTROUTING -s $setup_t -o $eth_port_name -j MASQUERADE
+sudo iptables -A FORWARD -s $setup_t -o $eth_port_name -j ACCEPT
+sudo iptables -A FORWARD -d $setup_t -m state --state ESTABLISHED,RELATED -i $eth_port_name -j ACCEPT
+sudo sysctl -w net.ipv4.ip_forward=1
+check_google_dns=$(dig @8.8.8.8 nvidia.com || true)
+if [[ $check_google_dns == *'Got answer'* ]]; then
+   echo 'Device mode on host successfuly set with DNS 8.8.8.8!'
+   exit 0
+else
+   echo 'Default google DNS is not working, trying to find a valid server in local host settings!'
+   dns_list=$(nmcli -t device show $eth_port_name | grep 'DNS' | grep -o '[^:]*$')
+   for dns in $dns_list; do 
+       check_dns=$(dig @$dns nvidia.com || true)
+       if [[ $check_dns == *'Got answer'* ]]; then
+           sudo iptables -t nat -A PREROUTING -p tcp -d 8.8.8.8 --dport 53 -j DNAT --to-destination $dns
+           sudo iptables -t nat -A PREROUTING -p udp -d 8.8.8.8 --dport 53 -j DNAT --to-destination $dns
+           echo 'Device mode on host successfuly set with DNS' $dns'!'
+           exit 0
+       fi
+   done
+   echo 'Could not find a valid DNS server, device mode setup failed!'
+   echo 'If needed to use device mode, please change the target default dns to a valid server by following the steps in release note.'
+   exit 0
+fi
+**********************
+Info: exec_command: /tmp/tmp_NV_DEVICE_MODE_SETUP_IMAGE_COMP.sh
+Found route default br0, setting up device mode
+net.ipv4.ip_forward = 1
+Device mode on host successfuly set with DNS 8.8.8.8!
+Info: [ Component Install Finished Successfully ]
+Info: [host] [ 16.00 KB used. Disk Avail: 99.82 GB ]
+Info: [ NV_DEVICE_MODE_SETUP_IMAGE_COMP Install took 2s ]

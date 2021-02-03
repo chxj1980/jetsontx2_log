@@ -1,0 +1,81 @@
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/cuda-repo-cross-aarch64-10-2-local-10.2.89_1.0-1_all.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb  noooooo
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/ubuntu1604/cuda-repo-ubuntu1604-10-2-local-10.2.89-440.40_1.0-1_amd64.deb noooo
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/deepstream-5.0_5.0.1-1_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Jetson_Linux_R32.5.0_aarch64.tbz2 x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb x
+
+
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb x
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb x
+
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-repo_1.6.0.501_amd64.deb yy x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-repo_1.6.0.501_arm64.deb yy
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libvisionworks-sfm-repo_0.90.4.501_arm64.deb x
+
+
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NsightSystems-linux-public-2020.5.3.17-0256620.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-cuda_10.2.89-1_arm64.deb  xxx
+
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-csv-visionworks_1.6.0.501_arm64.deb x
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/nvidia-container-toolkit_1.0.1-1_arm64.deb x
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/nvidia-l4t-jetson-multimedia-api_32.5.0-20210115151051_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NVIDIA_Nsight_Graphics_L4T_Public_2020.5.20329.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NVIDIA_VisionWorks_References.zip x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-dev.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-libs.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-licenses.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/OpenCV-4.1.1-2-gd5a58aa75-aarch64-python.deb x
+ 
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb yy x
+
+
+
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/T186/Tegra_Linux_Sample-Root-Filesystem_R32.5.0_aarch64.tbz2 有了
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/NoDLA/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb yy x
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-cross-aarch64-l4t-1.0.12-cuda10-x86_64-linux.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-demos-1.0.12-cuda10-aarch64-l4t.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/ubuntu1604/vpi-demos-1.0.12-cuda10-x86_64-linux-ubuntu1604.deb x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-dev-1.0.12-cuda10-aarch64-l4t.deb x
+
+
+
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-samples-1.0.12-cuda10-aarch64-l4t.deb yy x
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/vpi-samples-1.0.12-cuda10-x86_64-linux.deb yy x
+
+
+
+
+补充的：
+https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,797 @@
+Info: exec_command: ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+Info: NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP include 18 package
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer7"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-plugin7"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-plugin-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-plugin-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvonnxparsers7"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvonnxparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvonnxparsers-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers7_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvparsers7"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvparsers-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvparsers-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-bin_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-bin"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-doc_7.1.3-1+cuda10.2_all.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-doc"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/libnvinfer-samples_7.1.3-1+cuda10.2_all.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libnvinfer-samples"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/tensorrt_7.1.3.0-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' tensorrt"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python-libnvinfer"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python-libnvinfer-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python3-libnvinfer"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/python3-libnvinfer-dev_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' python3-libnvinfer-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/graphsurgeon-tf_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' graphsurgeon-tf"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb" 5
+sleep 5
+sudo rm -f /opt/nvidia/deb_repos/uff-converter-tf_7.1.3-1+cuda10.2_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' uff-converter-tf"
+Info: [ Package Install Finished Successfully ]
+Info: exec_command: ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+Info: [target] [ 1.04 GB used. Disk Avail: 14.63 GB ]
+Info: [ NV_L4T_TENSORRT_NODLA_TARGET_POST_INSTALL_COMP Install took 4m41s ]

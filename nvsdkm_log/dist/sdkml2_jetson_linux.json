@@ -1,0 +1,430 @@
+{
+    "information": {
+        "title": "Jetson Linux Versions Releases",
+        "fileVersion": "1",
+        "fileRevision": 0,
+        "serverConfigurationBuild": "762J"
+    },
+    "releases": [
+        {
+            "productCategory": "Jetson",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "JetPack 4.5",
+            "releaseVersion": "4.5",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "releaseMessage": "",
+            "showInMainList": true,
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "874688"
+            ],
+            "targetHW": [
+                "JETSON_AGX_XAVIER",
+                "JETSON_AGX_XAVIER_8GB",
+                "JETSON_XAVIER_NX_DEVKIT",
+                "JETSON_XAVIER_NX",
+                "JETSON_TX2",
+                "JETSON_TX2_4GB",
+                "JETSON_TX2I",
+                "JETSON_TX1",
+                "JETSON_NANO_DEVKIT",
+                "JETSON_NANO",
+                "JETSON_NANO_2GB_DEVKIT"
+            ],
+            "hostOperatingSystemsSupportFor": {
+                "displayWarningForOS": [],
+                "hostGroups": [
+                    "ubuntu1604",
+                    "ubuntu1804"
+                ],
+                "targetGroups": [
+                    "ubuntu1604",
+                    "ubuntu1804"
+                ]
+            },
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "What's New",
+                "releaseNotesURL": "https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-45/release-notes/index.html",
+                "releaseNotesTooltip": "Open Release Notes",
+                "releaseNotesDownload": false
+            },
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_JETPACK_ADDITIONAL_SDK_DEEPSTREAM",
+                    "version": "5.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Jetson_Linux_4.5_0"
+                }
+            ],
+            "schemaVersion": "8.0",
+            "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129/sdkml3_jetpack_l4t_45.json"
+        },
+        {
+            "productCategory": "Jetson",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "JetPack 4.4.1",
+            "releaseVersion": "4.4.1",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "releaseMessage": "",
+            "showInMainList":false,
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "874688"
+            ],
+            "targetHW": [
+                "JETSON_AGX_XAVIER",
+                "JETSON_AGX_XAVIER_8GB",
+                "JETSON_XAVIER_NX_DEVKIT",
+                "JETSON_XAVIER_NX",
+                "JETSON_TX2",
+                "JETSON_TX2_4GB",
+                "JETSON_TX2I",
+                "JETSON_TX1",
+                "JETSON_NANO_DEVKIT",
+                "JETSON_NANO",
+                "JETSON_NANO_2GB_DEVKIT"
+            ],
+            "hostOperatingSystemsSupportFor": {
+                "displayWarningForOS": [],
+                "hostGroups": [
+                    "ubuntu1604",
+                    "ubuntu1804"
+                ],
+                "targetGroups": [
+                    "ubuntu1604",
+                    "ubuntu1804"
+                ]
+            },
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "What's New",
+                "releaseNotesURL": "https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-441/release-notes/index.html",
+                "releaseNotesTooltip": "<div><span class=\"tooltip-title\">What's new in JetPack 4.4.1:</span><ul><li>Support for Jetson Nano 2GB Developer Kit.</li><li>Support for VPI 0.4.</li></ul><a href=\"https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-441/release-notes/index.html\" target=\"_blank\" class=\"tooltip-link\">Open Release Notes</a></div>",
+                "releaseNotesDownload": false
+            },
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_JETPACK_ADDITIONAL_SDK_DEEPSTREAM",
+                    "version": "5.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Jetson_Linux_4.4.1_0"
+                }
+            ],
+            "schemaVersion": "8.0",
+            "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.4.1/JETPACK_441_b50/sdkml3_jetpack_l4t_441.json"
+        },
+        {
+            "productCategory": "Jetson",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "JetPack 4.4",
+            "releaseVersion": "4.4",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "releaseMessage": "",
+            "showInMainList":false,
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "874688"
+            ],
+            "targetHW": [
+                "JETSON_AGX_XAVIER",
+                "JETSON_AGX_XAVIER_8GB",
+                "JETSON_XAVIER_NX_DEVKIT",
+                "JETSON_XAVIER_NX",
+                "JETSON_TX2",
+                "JETSON_TX2_4GB",
+                "JETSON_TX2I",
+                "JETSON_TX1",
+                "JETSON_NANO_DEVKIT",
+                "JETSON_NANO"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1604",
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-44/release-notes/index.html",
+                "releaseNotesTooltip": "Open release notes",
+                "releaseNotesDownload": false
+            },
+            "updateInfo": [
+                {
+                    "releaseVersion": "4.4",
+                    "releaseEdition": "DP"
+                }
+            ],
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_JETPACK_ADDITIONAL_SDK_DEEPSTREAM",
+                    "version": "5.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Jetson_Linux_4.4_0"
+                }
+            ],
+            "schemaVersion": "4.0",
+            "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.4-ga/JETPACK_44_b186/sdkml3_jetpack_l4t_44_ga.json"
+        },
+        {
+            "productCategory": "Jetson",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "JetPack 4.3",
+            "releaseVersion": "4.3",
+            "releaseEdition": "",
+            "releaseRevision": 0,
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "minSDKMVer": "1.3.0",
+            "maxSDKMVer":"",
+            "releaseMessage": "",
+            "showInMainList": false,
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "874688"
+            ],
+            "targetHW": [
+                "P2888",
+                "P2888-0060",
+                "P3310",
+                "P3489-0000",
+                "P3489-0080",
+                "P2180",
+                "P3448-0000",
+                "P3448-0020"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1604",
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-43/release-notes/index.html",
+                "releaseNotesTooltip": "Open release notes",
+                "releaseNotesDownload": false
+            },
+            "supportedAdditionalSDKList": [
+                {
+                    "id": "NV_JETPACK_ADDITIONAL_SDK_DEEPSTREAM",
+                    "version": "4.0",
+                    "revision": 0,
+                    "default": "off",
+                    "baseReleaseId": "Jetson_Linux_4.3_0"
+                }
+            ],
+            "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/sdkml3_jetpack_l4t_43_ga.json"
+        },
+        {
+            "productCategory": "Jetson",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "JetPack 3.3.3",
+            "releaseVersion": "3.3.3",
+            "releaseEdition": "GA",
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "releaseRevision": 0,
+            "minSDKMVer": "1.3.0",
+            "releaseMessage": "",
+            "showInMainList": false,
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "874688"
+            ],
+            "targetHW": [
+                "P3310",
+                "P3489-0000",
+                "P2180"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1604",
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "",
+                "releaseNotesURL": "",
+                "releaseNotesTooltip": "",
+                "releaseNotesDownload": true
+            },
+            "schemaVersion": "2.0",
+            "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-3.3.3/JETPACK_333_b8/sdkml3_jetpack_l4t_333.json"
+        },
+        {
+            "productCategory": "Jetson",
+            "targetOS": "Linux",
+            "serverType": [
+                "DEVZONE"
+            ],
+            "id": "",
+            "title": "JetPack 4.2.3",
+            "releaseVersion": "4.2.3",
+            "releaseEdition": "GA",
+            "releaseEditionMessage": "",
+            "releaseBuild": "",
+            "releaseRevision": 0,
+            "minSDKMVer": "1.3.0",
+            "maxSDKMVer":"",
+            "releaseMessage": "",
+            "showInMainList": false,
+            "releaseNotes": {
+                "releaseNotesTitle": "Release Notes",
+                "releaseNotesURL": "https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-423/release-notes/index.html",
+                "releaseNotesTooltip": "Open release notes",
+                "releaseNotesDownload": false
+            },
+            "pidGroupId": "-1",
+            "devzoneProgramId": [
+                "874688"
+            ],
+            "targetHW": [
+                "P2888",
+                "P2888-0060",
+                "P3310",
+                "P3489-0000",
+                "P3489-0080",
+                "P2180",
+                "P3448-0000",
+                "P3448-0020"
+            ],
+            "operatingSystemsSupport": [
+                "ubuntu1604",
+                "ubuntu1804"
+            ],
+            "operatingSystemsSupportWarning": [],
+            "estimateTargetDiskSizeInGB": "5.5",
+            "isInstallOnTargetEnabled": true,
+            "IntHWSupport": false,
+            "compRepoURL": "https://developer.download.nvidia.com/devzone/devcenter/mobile/jetpack_l4t/JETPACK_423_b6/sdkml3_jetpack_l4t_423.json"
+        }
+    ],
+    "additionalSDKs": {
+        "NV_JETPACK_ADDITIONAL_SDK_DEEPSTREAM": {
+            "id": "NV_JETPACK_ADDITIONAL_SDK_DEEPSTREAM",
+            "title": "DeepStream",
+            "description": "DeepStream SDK provides a complete streaming analytics toolkit for situational awareness through computer vision, intelligent video analytics (IVA) and multi-sensor processing.",
+            "versions": [
+                {
+                    "version": "5.0",
+                    "revision": 0,
+                    "baseReleaseId": "Jetson_Linux_4.5_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": ["874688"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.5/JETPACK_45_b129_DEEPSTREAM/sdkml3_jetpack_l4t_45_deepstream.json",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "5.0",
+                    "revision": 0,
+                    "baseReleaseId": "Jetson_Linux_4.4.1_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": ["874688"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.4.1/JETPACK_441_b50_DEEPSTREAM/sdkml3_jetpack_l4t_441_deepstream.json",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "5.0",
+                    "revision": 0,
+                    "baseReleaseId": "Jetson_Linux_4.4_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": ["874688"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.4-ga/JETPACK_44_b217_DEEPSTREAM/sdkml3_jetpack_l4t_44_ga_deepstream.json",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "5.0",
+                    "revision": 0,
+                    "baseReleaseId": "Jetson_Linux_4.4_DP_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": ["874688"],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.4-dp/JETPACK_44_b152_DEEPSTREAM/sdkml3_jetpack_l4t_44_dp_deepstream.json",
+                    "intHWCompURL": ""
+                },
+                {
+                    "version": "4.0",
+                    "revision": 0,
+                    "baseReleaseId": "Jetson_Linux_4.3_0",
+                    "estimateTargetDiskSizeInGB": "0",
+                    "pidGroupId": "-1",
+                    "devzoneProgramId": [
+                        "874688"
+                    ],
+                    "canInstallStandAlone": false,
+                    "installedOn": [
+                        "target"
+                    ],
+                    "compRepoURL": "https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132_DEEPSTREAM/sdkml3_jetpack_l4t_43_ga_deepstream.json",
+                    "intHWCompURL": ""
+                }
+            ]
+        }
+    }
+}

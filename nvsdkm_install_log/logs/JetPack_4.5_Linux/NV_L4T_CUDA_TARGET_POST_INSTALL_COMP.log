@@ -1,0 +1,220 @@
+Info: exec_command: ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+Info: NV_L4T_CUDA_TARGET_POST_INSTALL_COMP include 1 package
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+**********************
+Info: exec_command: dpkg -c /home/latelee/Downloads/nvidia/my_download/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-key add /var/cuda-repo-10-2-local-10.2.89/7fa2af80.pub" 5
+sleep 2
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install cuda-toolkit-10-2 " 5
+safe_apt_install "sudo apt-get purge -y cuda-repo-l4t-10-2-local-10.2.89" 5
+sudo rm -f /opt/nvidia/deb_repos/cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' cuda-toolkit-10-2"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package PostInstall Started ]
+Info: current working directory is /tmp
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+exec 3>&1
+exec 1>&2
+exec 2>&3
+
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 2>&1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+safe_apt_install "sudo apt-get install -y gnupg libgomp1 libfreeimage-dev libopenmpi-dev openmpi-bin" 5
+grep -q 'export PATH=.*/usr/local/cuda-10.2/bin' ~/.bashrc || echo 'export PATH=/usr/local/cuda-10.2/bin:$PATH'>>~/.bashrc
+grep -q 'export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64' ~/.bashrc || echo 'export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+**********************
+Info: exec_command: scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_CUDA_TARGET_POST_INSTALL_COMP.sh"
+*begin sudo apt-get install -y gnupg libgomp1 libfreeimage-dev libopenmpi-dev openmpi-bin, 5
+[sudo] password for tx2: 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gnupg is already the newest version (2.2.4-1ubuntu1.3).
+gnupg set to manually installed.
+libgomp1 is already the newest version (8.4.0-1ubuntu1~18.04).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin
+  dpkg-repack gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common
+  kde-window-manager kinit kio kpackagetool5 kwayland-data kwin-common
+  kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5
+  libkf5completion-data libkf5completion5 libkf5declarative-data
+  libkf5declarative5 libkf5doctools5 libkf5globalaccel-data libkf5globalaccel5
+  libkf5globalaccelprivate5 libkf5idletime5 libkf5jobwidgets-data
+  libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5
+  libkf5newstuffcore5 libkf5package-data libkf5package5 libkf5plasma5
+  libkf5quickaddons5 libkf5solid5 libkf5solid5-data libkf5sonnet5-data
+  libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data
+  libkf5xmlgui5 libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11
+  libkwinglutils11 libkwinxrenderutils11 libqgsttools-p1 libqt5designer5
+  libqt5help5 libqt5multimedia5 libqt5multimedia5-plugins
+  libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0
+  libxcb-damage0 os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam
+  python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-sip
+  qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  ibverbs-providers libfreeimage3 libhwloc-dev libhwloc-plugins libhwloc5
+  libibverbs-dev libjxr0 libnuma-dev libopenmpi2 ocl-icd-libopencl1
+  openmpi-common
+Suggested packages:
+  libhwloc-contrib-plugins openmpi-doc opencl-icd gfortran
+The following NEW packages will be installed:
+  ibverbs-providers libfreeimage-dev libfreeimage3 libhwloc-dev
+  libhwloc-plugins libhwloc5 libibverbs-dev libjxr0 libnuma-dev libopenmpi-dev
+  libopenmpi2 ocl-icd-libopencl1 openmpi-bin openmpi-common
+0 upgraded, 14 newly installed, 0 to remove and 98 not upgraded.
+Need to get 3,828 kB of archives.
+After this operation, 16.4 MB of additional disk space will be used.
+Get:1 http://ports.ubuntu.com/ubuntu-ports bionic-updates/main arm64 ibverbs-providers arm64 17.1-1ubuntu0.2 [136 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libjxr0 arm64 1.1-6build1 [137 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libhwloc5 arm64 1.11.9-1 [84.4 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports bionic/main arm64 ocl-icd-libopencl1 arm64 2.2.11-1ubuntu1 [29.2 kB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libhwloc-plugins arm64 1.11.9-1 [11.2 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libopenmpi2 arm64 2.1.1-8 [1,746 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 openmpi-common all 2.1.1-8 [140 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 openmpi-bin arm64 2.1.1-8 [81.4 kB]
+Get:9 http://ports.ubuntu.com/ubuntu-ports bionic-updates/universe arm64 libfreeimage3 arm64 3.17.0+ds1-5+deb9u1build0.18.04.1 [237 kB]
+Get:10 http://ports.ubuntu.com/ubuntu-ports bionic-updates/universe arm64 libfreeimage-dev arm64 3.17.0+ds1-5+deb9u1build0.18.04.1 [18.7 kB]
+Get:11 http://ports.ubuntu.com/ubuntu-ports bionic-updates/main arm64 libnuma-dev arm64 2.0.11-2.1ubuntu0.1 [31.1 kB]
+Get:12 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libhwloc-dev arm64 1.11.9-1 [149 kB]
+Get:13 http://ports.ubuntu.com/ubuntu-ports bionic-updates/main arm64 libibverbs-dev arm64 17.1-1ubuntu0.2 [103 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports bionic/universe arm64 libopenmpi-dev arm64 2.1.1-8 [924 kB]
+SDKM_INSTALL_ERROR debconf: delaying package configuration, since apt-utils is not installed
+Fetched 3,828 kB in 4s (1,037 kB/s)
+Selecting previously unselected package ibverbs-providers:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168714 files and directories currently installed.)
+Preparing to unpack .../00-ibverbs-providers_17.1-1ubuntu0.2_arm64.deb ...
+Unpacking ibverbs-providers:arm64 (17.1-1ubuntu0.2) ...
+Selecting previously unselected package libjxr0:arm64.
+Preparing to unpack .../01-libjxr0_1.1-6build1_arm64.deb ...
+Unpacking libjxr0:arm64 (1.1-6build1) ...
+Selecting previously unselected package libhwloc5:arm64.
+Preparing to unpack .../02-libhwloc5_1.11.9-1_arm64.deb ...
+Unpacking libhwloc5:arm64 (1.11.9-1) ...
+Selecting previously unselected package ocl-icd-libopencl1:arm64.
+Preparing to unpack .../03-ocl-icd-libopencl1_2.2.11-1ubuntu1_arm64.deb ...
+Unpacking ocl-icd-libopencl1:arm64 (2.2.11-1ubuntu1) ...
+Selecting previously unselected package libhwloc-plugins.
+Preparing to unpack .../04-libhwloc-plugins_1.11.9-1_arm64.deb ...
+Unpacking libhwloc-plugins (1.11.9-1) ...
+Selecting previously unselected package libopenmpi2:arm64.
+Preparing to unpack .../05-libopenmpi2_2.1.1-8_arm64.deb ...
+Unpacking libopenmpi2:arm64 (2.1.1-8) ...
+Selecting previously unselected package openmpi-common.
+Preparing to unpack .../06-openmpi-common_2.1.1-8_all.deb ...
+Unpacking openmpi-common (2.1.1-8) ...
+Selecting previously unselected package openmpi-bin.
+Preparing to unpack .../07-openmpi-bin_2.1.1-8_arm64.deb ...
+Unpacking openmpi-bin (2.1.1-8) ...
+Selecting previously unselected package libfreeimage3:arm64.
+Preparing to unpack .../08-libfreeimage3_3.17.0+ds1-5+deb9u1build0.18.04.1_arm64.deb ...
+Unpacking libfreeimage3:arm64 (3.17.0+ds1-5+deb9u1build0.18.04.1) ...
+Selecting previously unselected package libfreeimage-dev.
+Preparing to unpack .../09-libfreeimage-dev_3.17.0+ds1-5+deb9u1build0.18.04.1_arm64.deb ...
+Unpacking libfreeimage-dev (3.17.0+ds1-5+deb9u1build0.18.04.1) ...
+Selecting previously unselected package libnuma-dev:arm64.
+Preparing to unpack .../10-libnuma-dev_2.0.11-2.1ubuntu0.1_arm64.deb ...
+Unpacking libnuma-dev:arm64 (2.0.11-2.1ubuntu0.1) ...
+Selecting previously unselected package libhwloc-dev:arm64.
+Preparing to unpack .../11-libhwloc-dev_1.11.9-1_arm64.deb ...
+Unpacking libhwloc-dev:arm64 (1.11.9-1) ...
+Selecting previously unselected package libibverbs-dev:arm64.
+Preparing to unpack .../12-libibverbs-dev_17.1-1ubuntu0.2_arm64.deb ...
+Unpacking libibverbs-dev:arm64 (17.1-1ubuntu0.2) ...
+Selecting previously unselected package libopenmpi-dev.
+Preparing to unpack .../13-libopenmpi-dev_2.1.1-8_arm64.deb ...
+Unpacking libopenmpi-dev (2.1.1-8) ...
+Setting up libhwloc5:arm64 (1.11.9-1) ...
+Setting up libjxr0:arm64 (1.1-6build1) ...
+Setting up openmpi-common (2.1.1-8) ...
+Setting up ibverbs-providers:arm64 (17.1-1ubuntu0.2) ...
+Setting up libnuma-dev:arm64 (2.0.11-2.1ubuntu0.1) ...
+Setting up ocl-icd-libopencl1:arm64 (2.2.11-1ubuntu1) ...
+Setting up libibverbs-dev:arm64 (17.1-1ubuntu0.2) ...
+Setting up libhwloc-dev:arm64 (1.11.9-1) ...
+Setting up libfreeimage3:arm64 (3.17.0+ds1-5+deb9u1build0.18.04.1) ...
+Setting up libhwloc-plugins (1.11.9-1) ...
+Setting up libfreeimage-dev (3.17.0+ds1-5+deb9u1build0.18.04.1) ...
+Setting up libopenmpi2:arm64 (2.1.1-8) ...
+Setting up libopenmpi-dev (2.1.1-8) ...
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openmpi/include to provide /usr/include/mpi (mpi) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpicc.1.gz because associated file /usr/share/man/man1/mpicc.openmpi.1.gz (of link group mpi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpic++.1.gz because associated file /usr/share/man/man1/mpic++.openmpi.1.gz (of link group mpi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpicxx.1.gz because associated file /usr/share/man/man1/mpicxx.openmpi.1.gz (of link group mpi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpiCC.1.gz because associated file /usr/share/man/man1/mpiCC.openmpi.1.gz (of link group mpi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpif77.1.gz because associated file /usr/share/man/man1/mpif77.openmpi.1.gz (of link group mpi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpif90.1.gz because associated file /usr/share/man/man1/mpif90.openmpi.1.gz (of link group mpi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpifort.1.gz because associated file /usr/share/man/man1/mpifort.openmpi.1.gz (of link group mpi) doesn't exist
+Setting up openmpi-bin (2.1.1-8) ...
+update-alternatives: using /usr/bin/mpirun.openmpi to provide /usr/bin/mpirun (mpirun) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpirun.1.gz because associated file /usr/share/man/man1/mpirun.openmpi.1.gz (of link group mpirun) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/mpiexec.1.gz because associated file /usr/share/man/man1/mpiexec.openmpi.1.gz (of link group mpirun) doesn't exist
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.3) ...
+Info: [ Package PostInstall Finished Successfully ]
+Info: exec_command: ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+Info: [target] [ 2.85 GB used. Disk Avail: 15.81 GB ]
+Info: [ NV_L4T_CUDA_TARGET_POST_INSTALL_COMP Install took 5m24s ]

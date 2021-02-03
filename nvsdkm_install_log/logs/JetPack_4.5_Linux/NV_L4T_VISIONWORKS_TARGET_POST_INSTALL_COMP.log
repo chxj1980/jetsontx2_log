@@ -1,0 +1,672 @@
+Info: exec_command: ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+Info: NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP include 3 package
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-repo_1.6.0.501_arm64.deb
+**********************
+Info: exec_command: dpkg -c /home/latelee/Downloads/nvidia/my_download/libvisionworks-repo_1.6.0.501_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libvisionworks-repo_1.6.0.501_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install libvisionworks libvisionworks-dev libvisionworks-samples " 5
+safe_apt_install "sudo apt-get purge -y libvisionworks-repo" 5
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-repo_1.6.0.501_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-dev"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-samples"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+**********************
+Info: exec_command: dpkg -c /home/latelee/Downloads/nvidia/my_download/libvisionworks-sfm-repo_0.90.4.501_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libvisionworks-sfm-repo_0.90.4.501_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install libvisionworks-sfm libvisionworks-sfm-dev " 5
+safe_apt_install "sudo apt-get purge -y libvisionworks-sfm-repo" 5
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-sfm-repo_0.90.4.501_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-sfm"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-sfm-dev"
+Info: [ Package Install Finished Successfully ]
+Info: [ Package PostInstall Started ]
+Info: current working directory is /tmp
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+exec 3>&1
+exec 1>&2
+exec 2>&3
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+/usr/share/visionworks-sfm/sources/install-samples.sh ~/ ; sleep 0.5; cd ~/VisionWorks-SFM-*-Samples/; make
+**********************
+Info: exec_command: scp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no /tmp/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh tx2@192.168.55.1:~; ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "set -o pipefail; ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh | sed 's/^/SDKM_INSTALL_ERROR /' && rm -f ~/tmp_NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP.sh"
+Creating the /home/tx2//VisionWorks-SFM-0.90-Samples directory...
+Copying VisionWorks SFM samples to /home/tx2//VisionWorks-SFM-0.90-Samples...
+Finished copying VisionWorks SFM samples
+make[1]: Entering directory '/home/tx2/VisionWorks-SFM-0.90-Samples/nvxio'
+mkdir -p obj/release
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Types.o -c src/NVX/Private/Types.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/LogUtils.o -c src/NVX/Private/LogUtils.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenGLOpenCVRenderImpl.o -c src/NVX/Render/OpenCV/OpenGLOpenCVRenderImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Render3DWrapper.o -c src/NVX/Render/Wrappers/Render3DWrapper.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/RenderWrapper.o -c src/NVX/Render/Wrappers/RenderWrapper.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerImagesRenderImpl.o -c src/NVX/Render/GStreamer/GStreamerImagesRenderImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerVideoRenderImpl.o -c src/NVX/Render/GStreamer/GStreamerVideoRenderImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerBaseRenderImpl.o -c src/NVX/Render/GStreamer/GStreamerBaseRenderImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenGLBasicRenders.o -c src/NVX/Render/CUDA-OpenGL/OpenGLBasicRenders.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenGLRenderImpl.o -c src/NVX/Render/CUDA-OpenGL/OpenGLRenderImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/BaseRender3DImpl.o -c src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/Core:276:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/Functors.h:932:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR  struct functor_traits<std::binder2nd<T> >
+SDKM_INSTALL_ERROR                             ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/Core:276:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/Functors.h:936:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR  struct functor_traits<std::binder1st<T> >
+SDKM_INSTALL_ERROR                             ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:108:11: note: declared here
+SDKM_INSTALL_ERROR      class binder1st
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/MatrixBase.h:138:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:279,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h:62:32: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR  inline const CwiseUnaryOp<std::binder1st<std::equal_to<Scalar> >, const Derived>
+SDKM_INSTALL_ERROR                                 ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:108:11: note: declared here
+SDKM_INSTALL_ERROR      class binder1st
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/MatrixBase.h:138:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:279,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder1st<std::equal_to<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::MatrixBase<Derived>::cwiseEqual(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h:65:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    return CwiseUnaryOp<std::binder1st<std::equal_to<Scalar> >,const Derived>
+SDKM_INSTALL_ERROR                             ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:108:11: note: declared here
+SDKM_INSTALL_ERROR      class binder1st
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:108:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h: At global scope:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h:62:32: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR  inline const CwiseUnaryOp<std::binder1st<std::equal_to<Scalar> >, const Derived>
+SDKM_INSTALL_ERROR                                 ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:108:11: note: declared here
+SDKM_INSTALL_ERROR      class binder1st
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:190:34: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    inline const CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                                   ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:196:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator==,  std::equal_to)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:190:34: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    inline const CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                                   ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:197:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator!=,  std::not_equal_to)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:190:34: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    inline const CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                                   ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:198:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator<,   std::less)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:190:34: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    inline const CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                                   ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:199:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator<=,  std::less_equal)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:190:34: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    inline const CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                                   ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:200:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator>,   std::greater)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:190:34: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    inline const CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                                   ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:201:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator>=,  std::greater_equal)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:108:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder1st<std::equal_to<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::cwiseEqual(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h:65:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR    return CwiseUnaryOp<std::binder1st<std::equal_to<Scalar> >,const Derived>
+SDKM_INSTALL_ERROR                             ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:108:11: note: declared here
+SDKM_INSTALL_ERROR      class binder1st
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder2nd<std::equal_to<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::operator==(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:192:30: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR      return CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                               ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:196:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator==,  std::equal_to)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder2nd<std::not_equal_to<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::operator!=(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:192:30: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR      return CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                               ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:197:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator!=,  std::not_equal_to)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder2nd<std::less<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::operator<(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:192:30: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR      return CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                               ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:198:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator<,   std::less)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder2nd<std::less_equal<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::operator<=(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:192:30: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR      return CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                               ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:199:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator<=,  std::less_equal)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder2nd<std::greater<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::operator>(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:192:30: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR      return CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                               ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:200:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator>,   std::greater)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+SDKM_INSTALL_ERROR In file included from ../3rdparty/eigen/Eigen/src/Core/ArrayBase.h:109:0,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:350,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h: In member function ‘const Eigen::CwiseUnaryOp<std::binder2nd<std::greater_equal<typename Eigen::internal::traits<T>::Scalar> >, const Derived> Eigen::ArrayBase<Derived>::operator>=(const Scalar&) const’:
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:192:30: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+SDKM_INSTALL_ERROR      return CwiseUnaryOp<std::binder2nd<FUNCTOR<Scalar> >, const Derived> \
+SDKM_INSTALL_ERROR                               ^
+SDKM_INSTALL_ERROR ../3rdparty/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:201:1: note: in expansion of macro ‘EIGEN_MAKE_SCALAR_CWISE_UNARY_OP’
+SDKM_INSTALL_ERROR  EIGEN_MAKE_SCALAR_CWISE_UNARY_OP(operator>=,  std::greater_equal)
+SDKM_INSTALL_ERROR  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SDKM_INSTALL_ERROR In file included from /usr/include/c++/7/bits/stl_function.h:1127:0,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/string:48,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/locale_classes.h:40,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/bits/ios_base.h:41,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/ios:42,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/istream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/sstream:38,
+SDKM_INSTALL_ERROR                  from /usr/include/c++/7/complex:45,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Core:28,
+SDKM_INSTALL_ERROR                  from ../3rdparty/eigen/Eigen/Dense:1,
+SDKM_INSTALL_ERROR                  from src/NVX/Render/CUDA-OpenGL/BaseRender3DImpl.cpp:31:
+SDKM_INSTALL_ERROR /usr/include/c++/7/backward/binders.h:143:11: note: declared here
+SDKM_INSTALL_ERROR      class binder2nd
+SDKM_INSTALL_ERROR            ^~~~~~~~~
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenGL.o -c src/NVX/Render/CUDA-OpenGL/OpenGL.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Render.o -c src/NVX/Render/Render.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GlfwUIRenderImpl.o -c src/NVX/Render/GlfwUIRenderImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Render3D.o -c src/NVX/Render/Render3D.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/EventPlayer.o -c src/NVX/Render/EventPlayer.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/EventLogger.o -c src/NVX/Render/EventLogger.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ipp_raw.o -c src/NVX/FrameSource/NvMedia/OV10640/ipp_raw.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/img_producer.o -c src/NVX/FrameSource/NvMedia/OV10640/img_producer.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/eglstrm_setup.o -c src/NVX/FrameSource/NvMedia/OV10640/eglstrm_setup.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/interop.o -c src/NVX/FrameSource/NvMedia/OV10640/interop.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ipp_component.o -c src/NVX/FrameSource/NvMedia/OV10640/ipp_component.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ImageCapture.o -c src/NVX/FrameSource/NvMedia/OV10635/ImageCapture.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/NvMediaVideoFrameSourceImpl.o -c src/NVX/FrameSource/NvMedia/NvMediaVideoFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/NvMediaCSI10635CameraFrameSourceImpl.o -c src/NVX/FrameSource/NvMedia/NvMediaCSI10635CameraFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/NvMediaCSI10640CameraFrameSourceImpl.o -c src/NVX/FrameSource/NvMedia/NvMediaCSI10640CameraFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenCVVideoFrameSource.o -c src/NVX/FrameSource/OpenCV/OpenCVVideoFrameSource.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenCVImageFrameSource.o -c src/NVX/FrameSource/OpenCV/OpenCVImageFrameSource.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OpenCVFrameSourceImpl.o -c src/NVX/FrameSource/OpenCV/OpenCVFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/FrameSourceWrapper.o -c src/NVX/FrameSource/Wrappers/FrameSourceWrapper.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerVideoFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerVideoFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerBaseFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerBaseFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerCameraFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerCameraFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerOpenMAXFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerOpenMAXFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerEGLStreamSinkFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerEGLStreamSinkFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerCommon.o -c src/NVX/FrameSource/GStreamer/GStreamerCommon.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerImagesFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerImagesFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerNvCameraFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerNvCameraFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/GStreamerNvMediaFrameSourceImpl.o -c src/NVX/FrameSource/GStreamer/GStreamerNvMediaFrameSourceImpl.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ConvertFrame.o -c src/NVX/FrameSource/ConvertFrame.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/EGLAPIAccessors.o -c src/NVX/FrameSource/EGLAPIAccessors.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/FrameSource.o -c src/NVX/FrameSource/FrameSource.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/NVXIOFeatures.o -c src/NVX/NVXIOFeatures.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ConfigParser.o -c src/NVX/ConfigParser.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ArgumentParser.o -c src/NVX/ArgumentParser.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Utility.o -c src/NVX/Utility.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/ProfilerRange.o -c src/NVX/ProfilerRange.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/SyncTimer.o -c src/NVX/SyncTimer.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/OptionHandler.o -c src/NVX/OptionHandler.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Application.o -c src/NVX/Application.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/TypesOVX.o -c src/OVX/Private/TypesOVX.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/RenderOVXWrapper.o -c src/OVX/Render/Wrappers/RenderOVXWrapper.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Render3DOVXWrapper.o -c src/OVX/Render/Wrappers/Render3DOVXWrapper.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/Render3DOVX.o -c src/OVX/Render/Render3DOVX.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/RenderOVX.o -c src/OVX/Render/RenderOVX.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/FrameSourceOVXWrapper.o -c src/OVX/FrameSource/Wrappers/FrameSourceOVXWrapper.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/FrameSourceOVX.o -c src/OVX/FrameSource/FrameSourceOVX.cpp
+g++  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c++0x -o obj/release/UtilityOVX.o -c src/OVX/UtilityOVX.cpp
+cc  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c99 -o obj/release/plugin.o -c src/NVX/FrameSource/NvMedia/OV10640/plugin.c
+cc  -Iinclude -Isrc/ -Isrc/NVX/ -DCUDA_API_PER_THREAD_DEFAULT_STREAM -DUSE_GUI=1 -DUSE_GLES=1 -DUSE_GLFW=1  -DUSE_GSTREAMER_OMX=1 -DUSE_NVGSTCAMERA=1 -DUSE_GSTREAMER=1 -I./include  -I../3rdparty/opengl -I../3rdparty/freetype/include -I../3rdparty/glfw3/include  -I../3rdparty/opengl -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include  -I../3rdparty/eigen -O3 -DNDEBUG -std=c99 -o obj/release/plugin_config.o -c src/NVX/FrameSource/NvMedia/OV10640/plugin_config.c
+mkdir -p ../libs/aarch64/linux/release
+ar rsc -o ../libs/aarch64/linux/release/libovx.a obj/release/Types.o obj/release/LogUtils.o obj/release/OpenGLOpenCVRenderImpl.o obj/release/Render3DWrapper.o obj/release/RenderWrapper.o obj/release/GStreamerImagesRenderImpl.o obj/release/GStreamerVideoRenderImpl.o obj/release/GStreamerBaseRenderImpl.o obj/release/OpenGLBasicRenders.o obj/release/OpenGLRenderImpl.o obj/release/BaseRender3DImpl.o obj/release/OpenGL.o obj/release/Render.o obj/release/GlfwUIRenderImpl.o obj/release/Render3D.o obj/release/EventPlayer.o obj/release/EventLogger.o obj/release/ipp_raw.o obj/release/img_producer.o obj/release/eglstrm_setup.o obj/release/interop.o obj/release/ipp_component.o obj/release/ImageCapture.o obj/release/NvMediaVideoFrameSourceImpl.o obj/release/NvMediaCSI10635CameraFrameSourceImpl.o obj/release/NvMediaCSI10640CameraFrameSourceImpl.o obj/release/OpenCVVideoFrameSource.o obj/release/OpenCVImageFrameSource.o obj/release/OpenCVFrameSourceImpl.o obj/release/FrameSourceWrapper.o obj/release/GStreamerVideoFrameSourceImpl.o obj/release/GStreamerBaseFrameSourceImpl.o obj/release/GStreamerCameraFrameSourceImpl.o obj/release/GStreamerOpenMAXFrameSourceImpl.o obj/release/GStreamerEGLStreamSinkFrameSourceImpl.o obj/release/GStreamerCommon.o obj/release/GStreamerImagesFrameSourceImpl.o obj/release/GStreamerNvCameraFrameSourceImpl.o obj/release/GStreamerNvMediaFrameSourceImpl.o obj/release/ConvertFrame.o obj/release/EGLAPIAccessors.o obj/release/FrameSource.o obj/release/NVXIOFeatures.o obj/release/ConfigParser.o obj/release/ArgumentParser.o obj/release/Utility.o obj/release/ProfilerRange.o obj/release/SyncTimer.o obj/release/OptionHandler.o obj/release/Application.o obj/release/TypesOVX.o obj/release/RenderOVXWrapper.o obj/release/Render3DOVXWrapper.o obj/release/Render3DOVX.o obj/release/RenderOVX.o obj/release/FrameSourceOVXWrapper.o obj/release/FrameSourceOVX.o obj/release/UtilityOVX.o obj/release/plugin.o obj/release/plugin_config.o
+ar rsc -o ../libs/aarch64/linux/release/libnvx.a obj/release/Types.o obj/release/LogUtils.o obj/release/OpenGLOpenCVRenderImpl.o obj/release/Render3DWrapper.o obj/release/RenderWrapper.o obj/release/GStreamerImagesRenderImpl.o obj/release/GStreamerVideoRenderImpl.o obj/release/GStreamerBaseRenderImpl.o obj/release/OpenGLBasicRenders.o obj/release/OpenGLRenderImpl.o obj/release/BaseRender3DImpl.o obj/release/OpenGL.o obj/release/Render.o obj/release/GlfwUIRenderImpl.o obj/release/Render3D.o obj/release/EventPlayer.o obj/release/EventLogger.o obj/release/ipp_raw.o obj/release/img_producer.o obj/release/eglstrm_setup.o obj/release/interop.o obj/release/ipp_component.o obj/release/ImageCapture.o obj/release/NvMediaVideoFrameSourceImpl.o obj/release/NvMediaCSI10635CameraFrameSourceImpl.o obj/release/NvMediaCSI10640CameraFrameSourceImpl.o obj/release/OpenCVVideoFrameSource.o obj/release/OpenCVImageFrameSource.o obj/release/OpenCVFrameSourceImpl.o obj/release/FrameSourceWrapper.o obj/release/GStreamerVideoFrameSourceImpl.o obj/release/GStreamerBaseFrameSourceImpl.o obj/release/GStreamerCameraFrameSourceImpl.o obj/release/GStreamerOpenMAXFrameSourceImpl.o obj/release/GStreamerEGLStreamSinkFrameSourceImpl.o obj/release/GStreamerCommon.o obj/release/GStreamerImagesFrameSourceImpl.o obj/release/GStreamerNvCameraFrameSourceImpl.o obj/release/GStreamerNvMediaFrameSourceImpl.o obj/release/ConvertFrame.o obj/release/EGLAPIAccessors.o obj/release/FrameSource.o obj/release/NVXIOFeatures.o obj/release/ConfigParser.o obj/release/ArgumentParser.o obj/release/Utility.o obj/release/ProfilerRange.o obj/release/SyncTimer.o obj/release/OptionHandler.o obj/release/Application.o obj/release/plugin.o obj/release/plugin_config.o
+make[1]: Leaving directory '/home/tx2/VisionWorks-SFM-0.90-Samples/nvxio'
+make[1]: Entering directory '/home/tx2/VisionWorks-SFM-0.90-Samples/samples/sfm'
+mkdir -p obj/release
+g++  -I/home/nvidia/Downloads/build-visionworks-sfm/install/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include -I/usr/include/eigen3 -I/usr/local/cuda-10.2/targets/aarch64-linux/include   -I../../nvxio/include -I../../nvxio/src/ -I../../nvxio/src/NVX/ -I../../3rdparty/opengl -I../../3rdparty/glfw3/include -I../../3rdparty/freetype/include -I../../3rdparty/eigen -O3 -DNDEBUG -std=c++0x  -o obj/release/SfM.o -c SfM.cpp
+g++  -I/home/nvidia/Downloads/build-visionworks-sfm/install/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include -I/usr/include/eigen3 -I/usr/local/cuda-10.2/targets/aarch64-linux/include   -I../../nvxio/include -I../../nvxio/src/ -I../../nvxio/src/NVX/ -I../../3rdparty/opengl -I../../3rdparty/glfw3/include -I../../3rdparty/freetype/include -I../../3rdparty/eigen -O3 -DNDEBUG -std=c++0x  -o obj/release/utils.o -c utils.cpp
+g++  -I/home/nvidia/Downloads/build-visionworks-sfm/install/include -I/usr/local/cuda-10.2/targets/aarch64-linux/include -I/usr/include/eigen3 -I/usr/local/cuda-10.2/targets/aarch64-linux/include   -I../../nvxio/include -I../../nvxio/src/ -I../../nvxio/src/NVX/ -I../../3rdparty/opengl -I../../3rdparty/glfw3/include -I../../3rdparty/freetype/include -I../../3rdparty/eigen -O3 -DNDEBUG -std=c++0x  -o obj/release/main_sfm.o -c main_sfm.cpp
+mkdir -p ../../bin/aarch64/linux/release
+g++ -Wl,--allow-shlib-undefined -pthread -Wl,-rpath=/usr/local/cuda-10.2/targets/aarch64-linux/lib -O3 -DNDEBUG -std=c++0x  -o ../../bin/aarch64/linux/release/nvx_sample_sfm obj/release/SfM.o obj/release/utils.o obj/release/main_sfm.o ../../libs/aarch64/linux/release/libovx.a -L"/usr/lib" ../../libs/aarch64/linux/release/libovx.a ../../3rdparty/freetype/libs/libfreetype.a ../../3rdparty/glfw3/libs/libglfw3.a /usr/lib/aarch64-linux-gnu/tegra-egl/libGLESv2_nvidia.so.2 -L/usr/lib/aarch64-linux-gnu -lEGL -lXrandr -lXi -lXxf86vm -lX11 -lgstpbutils-1.0 -lgstaudio-1.0 -lgstvideo-1.0 -lgstapp-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 /usr/lib/aarch64-linux-gnu/tegra/libcuda.so  -L/home/nvidia/Downloads/build-visionworks-sfm/install/lib -lvisionworks_sfm -lvisionworks -L/usr/local/cuda-10.2/targets/aarch64-linux/lib -lcudart  -L/usr/local/cuda-10.2/targets/aarch64-linux/lib -lcudart -lvisionworks 
+make[1]: Leaving directory '/home/tx2/VisionWorks-SFM-0.90-Samples/samples/sfm'
+Info: [ Package PostInstall Finished Successfully ]
+Info: [ Package Install Started ]
+Info: target deb installer start to install
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb Package | tr -d '\n'
+Info: exec_command: dpkg -f /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb Version | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+sudo mkdir -p /opt/nvidia/deb_repos
+sudo chmod 777 /opt/nvidia/deb_repos
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+**********************
+Info: exec_command: dpkg -c /home/latelee/Downloads/nvidia/my_download/libvisionworks-tracking-repo_0.88.2.501_arm64.deb | awk '{ print $6 }' | grep '\.pub$' | sed 's/^\.//' | tr -d '\n'
+Info: exec_command [target]:
+**********************
+#!/bin/bash
+set -e
+export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
+exec 3>&1
+exec 1>&2
+exec 2>&3
+function safe_apt_install {
+    echo "*begin $1, $2"
+    tmp_log=/tmp/jetpack_dpkg_log.txt
+    sudo rm -f $tmp_log
+    set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+    while [ ${CMD_STATUS} -ne 0 ]; do
+        if grep -q -e "is locked by another process" -e "E: Could not get lock /var/" $tmp_log; then
+           sudo rm -f $tmp_log
+           set +e; $1 | tee $tmp_log; CMD_STATUS=${PIPESTATUS[0]}; set -e
+           echo "Waiting $2 seconds for apt to be available"; sleep ${2}
+        else
+           echo "Unhandled error when running $1"; exit 1
+        fi
+    done
+}
+safe_apt_install "sudo dpkg -i /opt/nvidia/deb_repos/libvisionworks-tracking-repo_0.88.2.501_arm64.deb" 5
+sleep 5
+safe_apt_install "sudo apt-get -y update" 5
+
+safe_apt_install "sudo apt-get -y  install libvisionworks-tracking libvisionworks-tracking-dev " 5
+safe_apt_install "sudo apt-get purge -y libvisionworks-tracking-repo" 5
+sudo rm -f /opt/nvidia/deb_repos/libvisionworks-tracking-repo_0.88.2.501_arm64.deb
+**********************
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-tracking"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' libvisionworks-tracking-dev"
+Info: [ Package Install Finished Successfully ]
+Info: exec_command: ssh -t -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "df -B1 / | tail -1 | awk '{ printf \$4 }'"
+Info: [target] [ 186.62 MB used. Disk Avail: 14.44 GB ]
+Info: [ NV_L4T_VISIONWORKS_TARGET_POST_INSTALL_COMP Install took 4m23s ]

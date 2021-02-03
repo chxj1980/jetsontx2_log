@@ -1,0 +1,6 @@
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@172.18.18.8 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"
+Info: change working directory to /tmp
+Info: exec_command: ssh -F /dev/null -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no tx2@192.168.55.1 "dpkg-query -W -f='\${db:Status-abbrev} \${Version}' nvidia-l4t-jetson-multimedia-api"

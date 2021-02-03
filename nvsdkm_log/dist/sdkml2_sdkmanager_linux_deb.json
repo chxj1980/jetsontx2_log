@@ -1,0 +1,42 @@
+{
+    "information": {
+        "title": "Sdk Manager Linux Versions Releases",
+        "fileVersion": "1",
+        "fileRevision": 6,
+        "serverConfigurationBuild": "634J"
+    },
+    "releases": [
+        {
+            "productCategory": "SDK Manager",
+            "targetOS": "Linux",
+            "serverType": [
+                "PID",
+                "DEVZONE"
+            ],
+            "id": "NV_SDKM_BUNDLE",
+            "title": "SDK Manager",
+            "releaseVersion": "1.4.0",
+            "releaseEdition": "",
+            "releaseEditionMessage": "",
+            "releaseBuild": "b7363",
+            "releaseRevision": 0,
+            "minSDKMVer": "",
+            "targetType": "",
+            "releaseMessage": "<ul><li>SDK Manager Docker image is now available for download.</li><li>Added support to login to NVIDIA Developer using QR code scanning.</li><li>Added send feedback option to report any issues and provide feedback.</li><li>Bug fixes and stability improvements.</li></ul>",
+            "pidGroupId": "",
+            "targetHW": [],
+            "updateInfo": [
+                {
+                    "buildNumber": "[^0|b0]+",
+                    "version": "^0\\.9\\.([1-9]{2,}|[2-9]\\d+|1[1-9])$"
+                }
+            ],
+            "supportedHW": [
+                "host",
+                "target"
+            ],
+            "IntHWSupport": false,
+            "compRepoURL": "https://developer.download.nvidia.com/sdkmanager/client_update/sdkml3_sdkm_1.4.0_deb.json"
+        }
+    ]
+}
