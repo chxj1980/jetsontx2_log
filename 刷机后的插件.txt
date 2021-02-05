@@ -1,0 +1,125 @@
+默认情况下：
+
+$ gst-inspect-1.0 -a | grep -i nvidia
+2021-02-04 23:59:24.665274: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+nvv4l2vp9enc:   Description              Nvidia elements for Video 4 Linux
+nvv4l2vp9enc:   Origin URL               http://nvidia.com/
+nvv4l2vp8enc:   Description              Nvidia elements for Video 4 Linux
+nvv4l2vp8enc:   Origin URL               http://nvidia.com/
+nvv4l2h265enc:   Author                   Viranjan Pagar <vpagar@nvidia.com>, Amit Pandya <apandya@nvidia.com>
+nvv4l2h265enc:   Description              Nvidia elements for Video 4 Linux
+nvv4l2h265enc:   Origin URL               http://nvidia.com/
+nvv4l2h264enc:   Description              Nvidia elements for Video 4 Linux
+nvv4l2h264enc:   Origin URL               http://nvidia.com/
+nvv4l2decoder:   Long-name                NVIDIA v4l2 video decoder
+nvv4l2decoder:   Author                   Nicolas Dufresne <nicolas.dufresne@collabora.com>, Viranjan Pagar <vpagar@nvidia.com>
+nvv4l2decoder:   Description              Nvidia elements for Video 4 Linux
+nvv4l2decoder:   Origin URL               http://nvidia.com/
+nvarguscamerasrc:   Description              nVidia ARGUS Camera Source
+nvarguscamerasrc:   Author                   Viranjan Pagar <vpagar@nvidia.com>, Amit Pandya <apandya@nvidia.com>
+nvarguscamerasrc:   Description              nVidia ARGUS Source Component
+nvarguscamerasrc:   Origin URL               http://nvidia.com/
+nvivafilter:   Author                   amit pandya <apandya@nvidia.com>
+nvivafilter:   Origin URL               http://nvidia.com/
+nvvideosink:   Long-name                nVidia Video Sink
+nvvideosink:   Description              nVidia Video Sink
+nvvideosink:   Author                   Tushar Khinvasara <tkhinvasara@nvidia.com>
+nvvideosink:   Description              nVidia Video Sink Component
+nvvideosink:   Origin URL               http://nvidia.com/
+nv3dsink:   Long-name                Nvidia 3D sink
+nv3dsink:   Author                   Yogish Kulkarni <yogishk@nvidia.com>
+nv3dsink:   Description              Nvidia Video Sink Plugins
+nv3dsink:   Binary package           Nvidia Video Sink Plugins
+nv3dsink:   Origin URL               http://nvidia.com/
+videocuda:   Author                   Jitendra Kumar <jitendrak@nvidia.com>
+videocuda:   Origin URL               http://nvidia.com/
+nvegltransform:   Author                   Jitendra Kumar <jitendrak@nvidia.com>
+nvegltransform:   Origin URL               http://nvidia.com
+nveglstreamsrc:   Long-name                nVidia EGL Stream
+nveglstreamsrc:   Description              nVidia EGL Stream
+nveglstreamsrc:   Author                   Tushar Khinvasara <tkhinvasara@nvidia.com>
+nveglstreamsrc:   Description              nVidia EGL Stream Source Component
+nveglstreamsrc:   Origin URL               http://nvidia.com
+nvvidconv:   Author                   amit pandya <apandya@nvidia.com>
+nvvidconv:   Origin URL               http://nvidia.com/
+nvv4l2camerasrc:   Description              Nvidia V4l2 Camera Source
+nvv4l2camerasrc:   Author                   Ashwin Deshpande <ashwind@nvidia.com>
+nvv4l2camerasrc:   Description              Nvidia v4l2 Source Component
+nvv4l2camerasrc:   Origin URL               http://nvidia.com/
+nveglglessink:   Binary package           GStreamer Nvidia Bad Plug-ins source release
+nvcompositor:   Author                   Amit Pandya <apandya@nvidia.com>
+nvcompositor:   Origin URL               http://nvidia.com/
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+nvmsgbroker:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvmsgbroker:   Origin URL               http://nvidia.com
+nvtracker:   Author                   NVIDIA Corporation. Post on Deepstream SDK forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvtracker:   Origin URL               http://nvidia.com/
+nvinfer:   Description              Nvidia DeepStreamSDK TensorRT plugin
+nvinfer:   Author                   NVIDIA Corporation. Deepstream for Tesla forum: https://devtalk.nvidia.com/default/board/209
+nvinfer:   Description              NVIDIA DeepStreamSDK TensorRT plugin
+nvinfer:   Binary package           NVIDIA DeepStreamSDK TensorRT plugin
+nvinfer:   Origin URL               http://nvidia.com/
+nvof:   Author                   NVIDIA Corporation. Post on Deepstream for Jetson/Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvof:   Description              NVIDIA opticalflow plugin for integration with DeepStream on DGPU
+nvof:   Binary package           NVIDIA DeepStream 3rdparty IP integration opticalflow plugin
+nvof:   Origin URL               http://nvidia.com/
+nvofvisual:   Author                   NVIDIA Corporation. Post on Deepstream for Jetson/Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvofvisual:   Description              NVIDIA opticalflow visualization plugin for integration with DeepStream on DGPU
+nvofvisual:   Binary package           NVIDIA DeepStream Optical Flow Visualization Plugin
+nvofvisual:   Origin URL               http://nvidia.com/
+nvstreamdemux:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvstreamdemux:   Description              NVIDIA Multistream mux/demux plugin
+nvstreamdemux:   Binary package           NVIDIA Multistream Plugins
+nvstreamdemux:   Origin URL               http://nvidia.com/
+nvstreammux:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvstreammux:   Description              NVIDIA Multistream mux/demux plugin
+nvstreammux:   Binary package           NVIDIA Multistream Plugins
+nvstreammux:   Origin URL               http://nvidia.com/
+nvmultistreamtiler:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvmultistreamtiler:   Description              NVIDIA Multistream Tiler plugin
+nvmultistreamtiler:   Binary package           NVIDIA Multistream Plugins
+nvmultistreamtiler:   Origin URL               http://nvidia.com/
+dsexample:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+dsexample:   Description              NVIDIA example plugin for integration with DeepStream on DGPU
+dsexample:   Binary package           NVIDIA DeepStream 3rdparty IP integration example plugin
+dsexample:   Origin URL               http://nvidia.com/
+2021-02-04 23:59:29.311918: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+nvinferserver:   Description              Nvidia DeepStreamSDK TensorRT plugin
+nvinferserver:   Author                   NVIDIA Corporation. Deepstream for Tesla forum: https://devtalk.nvidia.com/default/board/209
+nvinferserver:   Description              NVIDIA DeepStreamSDK TensorRT Inference Server plugin
+nvinferserver:   Binary package           NVIDIA DeepStreamSDK TensorRT Inference Server plugin
+nvinferserver:   Origin URL               http://nvidia.com/
+nvsegvisual:   Author                   NVIDIA Corporation. Post on Deepstream for Jetson/Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvsegvisual:   Description              NVIDIA segmentation visualization plugin for integration with DeepStream on DGPU
+nvsegvisual:   Binary package           NVIDIA DeepStream Segmantation Visualization Plugin
+nvsegvisual:   Origin URL               http://nvidia.com/
+nvdsosd:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvdsosd:   Origin URL               http://nvidia.com/
+nvmsgconv:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvmsgconv:   Origin URL               http://nvidia.com
+nvdewarper:   Author                   NVIDIA Corporation. Post on Deepstream for Tesla forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvdewarper:   Binary package           GStreamer nVidia Dewarper Plugin
+nvdewarper:   Origin URL               http://nvidia.com/
+nvdsanalytics:   Author                   NVIDIA Corporation. Post on Deepstream forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvdsanalytics:   Description              NVIDIA dsanalytics plugin for integration with DeepStream on DGPU/Jetson
+nvdsanalytics:   Binary package           NVIDIA DeepStream dsanalytics plugin
+nvdsanalytics:   Origin URL               http://nvidia.com/
+nvvideoconvert:   Author                   NVIDIA Corporation. Post on Deepstream SDK forum for any queries @ https://devtalk.nvidia.com/default/board/209/
+nvvideoconvert:   Origin URL               http://nvidia.com/
+nvjpegdec:   Description              Nvidia accelerated JPeg plugin library
+nvjpegenc:   Description              Nvidia accelerated JPeg plugin library
+nvoverlaysink:   Author                   Jitendra Kumar <jitendrak@nvidia.com>
+omxvp9enc:   Author                   Jitendra Kumar <jitendrak@nvidia.com>
+omxvp8enc:   Author                   Jitendra Kumar <jitendrak@nvidia.com>
+omxh265enc:   Author                   Sanket Kothari <skothari@nvidia.com>
+omxvp9dec:   Author                   Swapnil Rathi <srathi@nvidia.com>
+omxh265dec:   Author                   Sanket Kothari <skothari@nvidia.com>
+nvdrmvideosink:   Long-name                Nvidia Drm Video Sink
+nvdrmvideosink:   Description              Nvidia Drm Video Sink
+nvdrmvideosink:   Author                   Ashwini Munje <amunje@nvidia.com>
+nvdrmvideosink:   Description              nvidia Drm Video Sink Component
+nvdrmvideosink:   Origin URL               http://nvidia.com/
+nvtee:   Author                   Jitendra Kumar <jitendrak@nvidia.com>
+nvtee:   Description              Nvidia Video Capture Component 
+nvtee:   Origin URL               http://nvidia.com
